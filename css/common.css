@@ -651,6 +651,7 @@ ul, li {
 
 .swiper-wrapper {
     transform-style: preserve-3d;
+    display: flex;
 }
 
 .swiper_touch {
@@ -666,7 +667,6 @@ ul, li {
     transition-property: transform;
     box-sizing: content-box;
 }
-
 
 
 .swiper_item {
