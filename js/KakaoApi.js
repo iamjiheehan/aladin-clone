@@ -1,3 +1,5 @@
+
+
 $(function () {
     // Array of book titles
     var bookTitles = [
@@ -46,6 +48,23 @@ $(function () {
 
                 $swiperWrapper.append($swiperItem);
             }
+
+            $(function () {
+                $("#jinnyWelcome_Back .swiper_wrapper").slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                });
+                $("#jinnyWelcome .white_circle_prev").on('click',function(e) {
+                    // e.preventDefault();
+                    $("#jinnyWelcome_Back .swiper_wrapper").slick("slickPrev");
+                });
+            
+                $("#jinnyWelcome .white_circle_next").on('click',function(e) {
+                    // e.preventDefault();
+                    $("#jinnyWelcome_Back .swiper_wrapper").slick("slickNext");
+                });
+            });
+
         });
     });
 });

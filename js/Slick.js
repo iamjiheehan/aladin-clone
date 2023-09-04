@@ -88,6 +88,7 @@ $(function () {
 
 // --------------------------추천 마법사의 선택 슬라이더 
 
+
 // $(function () {
 //     $("#jinnyWelcome_Back .swiper_wrapper").slick({
 //         slidesToShow: 5,
