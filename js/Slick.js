@@ -16,4 +16,6 @@ $(function () {
         //e.preventDefault();
         $(".editor_choice .swiper_section .swiper_wrapper").slick("slickNext");
     });
+
+    
 });
