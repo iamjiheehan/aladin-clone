@@ -406,11 +406,6 @@
     width: 685px;
 }
 
-.welcome_section1 .editor_choice .editor_list .swiper_wrapper {
-    position: relative;
-    width: calc(685px*3);
-    transform: translateX(1px);
-}
 
 .welcome_section1 .editor_choice .editor_list .swiper_wrapper .swiper_item{
     width: 25%;
