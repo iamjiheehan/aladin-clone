@@ -1,3 +1,7 @@
+
+// --------------편집장의 선택 탭-------------------------
+
+
 $(function () {
     $(".editor_choice #editorchoice .swiper_wrapper").slick({
         slidesToShow: 4,

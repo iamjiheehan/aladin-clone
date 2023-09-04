@@ -3,13 +3,6 @@
     position: absolute;
 }
 
-/* .slick-list .draggable {
-    display: flex !important;
-} */
-
-.slick-list .draggable{
-    display: flex !important;
-}
 
 .RE_banner_new {
     width: 1030px;
