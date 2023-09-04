@@ -222,18 +222,18 @@ $(function () {
 // --------------------------투비컨티뉴드 슬라이더
 
 $(function () {
-    $("#w_specialPrice_type .w_booklist .swiper_wrapper").slick({
+    $("#w_tobe_type .w_booklist .swiper_wrapper").slick({
         slidesToShow: 5,
         slidesToScroll: 5,
     });
-    $("#w_specialPrice_type .white_circle_prev").on('click',function(e) {
+    $("#w_tobe_type .white_circle_prev").on('click',function(e) {
         // e.preventDefault();
-        $("#w_specialPrice_type .w_booklist .swiper_wrapper").slick("slickPrev");
+        $("#w_tobe_type .w_booklist .swiper_wrapper").slick("slickPrev");
     });
 
-    $("#w_specialPrice_type .white_circle_next").on('click',function(e) {
+    $("#w_tobe_type .white_circle_next").on('click',function(e) {
         // e.preventDefault();
-        $("#w_specialPrice_type .w_booklist .swiper_wrapper").slick("slickNext");
+        $("#w_tobe_type .w_booklist .swiper_wrapper").slick("slickNext");
     });
     
 });
