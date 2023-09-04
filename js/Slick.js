@@ -89,96 +89,18 @@ $(function () {
 // --------------------------추천 마법사의 선택 슬라이더 
 
 $(function () {
-    $(function () {
-        $.ajax({
-            method: "GET",
-            url: "https://dapi.kakao.com/v3/search/book?target=title",
-            data: $.param({ query: "또 못 버린 물건들" }),
-            headers: { Authorization: "KakaoAK 6d7be6265b1495468abf689fe747c801" }
-        })
-        .done(function (msg) {
-            for (var i = 0; i < msg.documents.length; i++) {
-                var book = msg.documents[i];
-                var $swiperItem = $("<div class='swiper_item'></div>");
-                var $cover = $("<div class='cover'></div>");
-                
-                // 썸네일 추가
-                $cover.append("<a href='#'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
-                
-                // 레이어 추가
-                var $jinnybtnlayer = $("<div class='jinnybtnlayer'></div>");
-                $jinnybtnlayer.append("<a href='#'>장바구니에 담기</a>");
-                $jinnybtnlayer.append("<a href='#'>구매했어요</a>");
-                $jinnybtnlayer.append("<a href='#'>관심없어요</a>");
-                $cover.append($jinnybtnlayer);
-                
-                $swiperItem.append($cover);
-                // 제목 추가
-                var $text = $("<div class='text'></div>");
-                var $title = $("<div class='title'></div>");
-                $title.append("<a href='#'>" + book.title + "</a>");
-                $text.append($title);
-                $swiperItem.append($text);
-                
-                $('#jinnyWelcome_Back .swiper_wrapper').append($swiperItem);
-            }
-            jinnySlick();
-        });
+    $("#jinnyWelcome_Back .swiper_wrapper").slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+    });
+    $("#jinnyWelcome .white_circle_prev").on('click',function(e) {
+        // e.preventDefault();
+        $("#jinnyWelcome_Back .swiper_wrapper").slick("slickPrev");
     });
 
-
-    //----------------------- API호출
-    $(function () {
-        $.ajax({
-            method: "GET",
-            url: "https://dapi.kakao.com/v3/search/book?target=title",
-            data: $.param({ query: "또 못 버린 물건들" }),
-            headers: { Authorization: "KakaoAK 6d7be6265b1495468abf689fe747c801" }
-        })
-        .done(function (msg) {
-            for (var i = 0; i < msg.documents.length; i++) {
-                var book = msg.documents[i];
-                var $swiperItem = $("<div class='swiper_item'></div>");
-                var $cover = $("<div class='cover'></div>");
-                
-                // 썸네일 추가
-                $cover.append("<a href='#'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
-                
-                // 레이어 추가
-                var $jinnybtnlayer = $("<div class='jinnybtnlayer'></div>");
-                $jinnybtnlayer.append("<a href='#'>장바구니에 담기</a>");
-                $jinnybtnlayer.append("<a href='#'>구매했어요</a>");
-                $jinnybtnlayer.append("<a href='#'>관심없어요</a>");
-                $cover.append($jinnybtnlayer);
-                
-                $swiperItem.append($cover);
-
-                // 제목 추가
-                var $text = $("<div class='text'></div>");
-                var $title = $("<div class='title'></div>");
-                $title.append("<a href='#'>" + book.title + "</a>");
-                $text.append($title);
-                $swiperItem.append($text);
-                
-            }
-            jinnySlick();
-        });
-        //----------------------- Slick library 추가
-        const jinnySlick = function () {
-            $("#jinnyWelcome_Back .swiper_wrapper").slick({
-                slidesToShow: 5,
-                slidesToScroll: 5,
-            });
-            $("#jinnyWelcome .white_circle_prev").on('click',function(e) {
-                // e.preventDefault();
-                $("#jinnyWelcome_Back .swiper_wrapper").slick("slickPrev");
-            });
-        
-            $("#jinnyWelcome .white_circle_next").on('click',function(e) {
-                // e.preventDefault();
-                $("#jinnyWelcome_Back .swiper_wrapper").slick("slickNext");
-            });
-        }
+    $("#jinnyWelcome .white_circle_next").on('click',function(e) {
+        // e.preventDefault();
+        $("#jinnyWelcome_Back .swiper_wrapper").slick("slickNext");
     });
 });
 
