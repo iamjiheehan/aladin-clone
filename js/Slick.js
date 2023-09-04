@@ -152,6 +152,7 @@ $(function () {
                 $cover.append($jinnybtnlayer);
                 
                 $swiperItem.append($cover);
+
                 // 제목 추가
                 var $text = $("<div class='text'></div>");
                 var $title = $("<div class='title'></div>");
@@ -159,11 +160,9 @@ $(function () {
                 $text.append($title);
                 $swiperItem.append($text);
                 
-                $('#jinnyWelcome_Back .swiper_wrapper').append($swiperItem);
             }
             jinnySlick();
         });
-
         //----------------------- Slick library 추가
         const jinnySlick = function () {
             $("#jinnyWelcome_Back .swiper_wrapper").slick({
@@ -181,7 +180,6 @@ $(function () {
             });
         }
     });
-
 });
 
 
