@@ -20,16 +20,14 @@ $(function () {
             $jinnybtnlayer.append("<a href='#'>구매했어요</a>");
             $jinnybtnlayer.append("<a href='#'>관심없어요</a>");
             $cover.append($jinnybtnlayer);
-            
             $swiperItem.append($cover);
-
+            
             // 제목 추가
             var $text = $("<div class='text'></div>");
             var $title = $("<div class='title'></div>");
             $title.append("<a href='#'>" + book.title + "</a>");
             $text.append($title);
             $swiperItem.append($text);
-            
         }
     });
 });

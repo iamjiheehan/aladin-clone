@@ -88,21 +88,21 @@ $(function () {
 
 // --------------------------추천 마법사의 선택 슬라이더 
 
-$(function () {
-    $("#jinnyWelcome_Back .swiper_wrapper").slick({
-        slidesToShow: 5,
-        slidesToScroll: 5,
-    });
-    $("#jinnyWelcome .white_circle_prev").on('click',function(e) {
-        // e.preventDefault();
-        $("#jinnyWelcome_Back .swiper_wrapper").slick("slickPrev");
-    });
+// $(function () {
+//     $("#jinnyWelcome_Back .swiper_wrapper").slick({
+//         slidesToShow: 5,
+//         slidesToScroll: 5,
+//     });
+//     $("#jinnyWelcome .white_circle_prev").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#jinnyWelcome_Back .swiper_wrapper").slick("slickPrev");
+//     });
 
-    $("#jinnyWelcome .white_circle_next").on('click',function(e) {
-        // e.preventDefault();
-        $("#jinnyWelcome_Back .swiper_wrapper").slick("slickNext");
-    });
-});
+//     $("#jinnyWelcome .white_circle_next").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#jinnyWelcome_Back .swiper_wrapper").slick("slickNext");
+//     });
+// });
 
 
 // --------------------------화제의 책 소식 슬라이더 
