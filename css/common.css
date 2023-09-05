@@ -73,8 +73,21 @@ ul, li {
     height: 10px;
 }
 
+.temp_H30 {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+
 .temp_PR10 {
     padding-right: 10px;
+}
+
+
+.temp_line1 {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
 }
 
 .inner, .gnb, .util {
