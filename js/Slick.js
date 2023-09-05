@@ -240,22 +240,22 @@ $(function () {
 
 // --------------------------알라디너의 선택 슬라이더
 
-$(function () {
-    $("#w_aladinerChoice_type .w_booklist .swiper_wrapper").slick({
-        slidesToShow: 5,
-        slidesToScroll: 5,
-    });
-    $("#w_aladinerChoice_type .white_circle_prev").on('click',function(e) {
-        // e.preventDefault();
-        $("#w_aladinerChoice_type .w_booklist .swiper_wrapper").slick("slickPrev");
-    });
+// $(function () {
+//     $("#w_aladinerChoice_type .w_booklist .swiper_wrapper").slick({
+//         slidesToShow: 5,
+//         slidesToScroll: 5,
+//     });
+//     $("#w_aladinerChoice_type .white_circle_prev").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#w_aladinerChoice_type .w_booklist .swiper_wrapper").slick("slickPrev");
+//     });
 
-    $("#w_aladinerChoice_type .white_circle_next").on('click',function(e) {
-        // e.preventDefault();
-        $("#w_aladinerChoice_type .w_booklist .swiper_wrapper").slick("slickNext");
-    });
+//     $("#w_aladinerChoice_type .white_circle_next").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#w_aladinerChoice_type .w_booklist .swiper_wrapper").slick("slickNext");
+//     });
     
-});
+// });
 
 
 // --------------------------마지막 광고 배너슬라이더 

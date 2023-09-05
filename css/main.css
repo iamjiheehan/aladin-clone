@@ -1236,7 +1236,9 @@
 }
 
 /* -------------------------알라디너의 선택------------------------ */
-
+.w_booklist .cover {
+    width: 180px;
+}
 
 .w_booklist .cover img {
     width: 100%;
@@ -1247,6 +1249,10 @@
     gap: 2rem;
     align-items: flex-end;
     height: auto;
+}
+
+#w_aladinerChoice_wrapper .swiper_item{
+    width: 182px;
 }
 
 .w_booklist .text.type1 {

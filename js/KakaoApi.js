@@ -133,7 +133,6 @@ $(function () {
 // ----------------------------------------------이주의 특가 API 호출 및 Slick 적용 
 
 $(function () {
-    // Array of book titles
     var bookTitles = [
         "뇌가 젊어지는 엄지손가락 자극법",
         "셜록 홈즈의 초대장",
@@ -191,6 +190,70 @@ $(function () {
                 $("#w_specialPrice_type .white_circle_next").on('click',function(e) {
                     // e.preventDefault();
                     $("#w_specialPrice .swiper_wrapper").slick("slickNext");
+                });
+            });
+        });
+    });
+});
+
+// ----------------------------------------------알라디너의 선택 API 호출 및 Slick 적용 
+
+$(function () {
+    var bookTitles = [
+        "88번 버스의 기적",
+        "타라바스",
+        "지식의 기초",
+        "전쟁과 죄책",
+        "죽은자의 집 청소",
+        "재일코리안 스포츠 영웅 열전",
+        "못난이 홈베이킹",
+        "원자 스파이"
+    ];
+
+    var $swiperWrapper = $('#w_aladinerChoice .swiper_wrapper');
+
+    bookTitles.forEach(function (title) {
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=title",
+            data: $.param({ query: title, size: 1 }), 
+            headers: { Authorization: "KakaoAK 6d7be6265b1495468abf689fe747c801" }
+        })
+        .done(function (msg) {
+            if (msg.documents.length > 0) {
+                var book = msg.documents[0]; 
+
+                var $swiperItem = $("<div class='swiper_item'></div>");
+                var $cover = $("<div class='cover'></div>");
+
+                $cover.append("<a href='#'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
+
+                $swiperItem.append($cover);
+
+                var $text = $("<div class='text type1'></div>");
+                var $title = $("<div class='title'></div>");
+                var $contents = $("<div class='sub'>"+ book.contents +"</div>");
+                $title.append("<a href='#'>" + book.title + "</a>");
+                $text.append($title);
+                $text.append($contents);
+                $swiperItem.append($text);
+                $swiperWrapper.append($swiperItem);
+                console.log(book.sale_price);
+            }
+
+            $(function () {
+                $("#w_aladinerChoice .swiper_wrapper").slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                });
+                $("#w_aladinerChoice_type .white_circle_prev").on('click',function(e) {
+                    // e.preventDefault();
+                    $("#w_aladinerChoice .swiper_wrapper").slick("slickPrev");
+                });
+            
+                $("#w_aladinerChoice_type .white_circle_next").on('click',function(e) {
+                    // e.preventDefault();
+                    $("#w_aladinerChoice .swiper_wrapper").slick("slickNext");
                 });
             });
         });
