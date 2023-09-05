@@ -545,7 +545,6 @@
 
 
 .welcome_section1 .right_big_bn .swiper_section .swiper_wrapper {
-    width: calc(305px*3);
     height: 100%;
 }
 
