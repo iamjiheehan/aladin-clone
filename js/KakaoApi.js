@@ -166,12 +166,16 @@ $(function () {
 
                 $swiperItem.append($cover);
 
-                var $text = $("<div class='text'></div>");
+                var $text = $("<div class='text type2'></div>");
                 var $title = $("<div class='title'></div>");
+                var formattedPrice = parseInt(book.sale_price).toLocaleString();
+                var $price = $("<div class='price'>" + formattedPrice + "원</div>");
                 $title.append("<a href='#'>" + book.title + "</a>");
                 $text.append($title);
+                $text.append($price);
                 $swiperItem.append($text);
                 $swiperWrapper.append($swiperItem);
+                console.log(book.sale_price);
             }
 
             $(function () {
