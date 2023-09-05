@@ -129,7 +129,7 @@
     font-size: 13px;
 }
 
-#head_layer_menu a:hover, .category a:hover {
+#head_layer_menu a:hover, .category a:hover, .category > ul > li > a:hover {
     text-decoration: underline;
 }
 
