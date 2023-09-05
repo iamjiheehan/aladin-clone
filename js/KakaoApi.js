@@ -174,7 +174,6 @@ $(function () {
                 $text.append($price);
                 $swiperItem.append($text);
                 $swiperWrapper.append($swiperItem);
-                console.log(book.sale_price);
             }
 
             $(function () {
