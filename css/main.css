@@ -808,6 +808,17 @@
     width: 20px;
 }
 
+.wide_banner .swiper-pagination {
+    color: #737373;
+    font-size: 12px;
+    right: 35rem;
+    top:2rem;
+    padding: 8px 15px 0 0;
+    position: absolute;
+    z-index: 10;
+}
+
+
 .wide_banner .swiper-button-next, .wide_banner .swiper-button-prev {
     position: absolute;
     top: 50%;
