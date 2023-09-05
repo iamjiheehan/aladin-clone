@@ -1,3 +1,27 @@
+//-------------- right_big_bn 슬라이더--------------
+
+$(function () {
+    $(".right_big_bn .swiper_section .swiper_wrapper").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        pauseOnHover: true,
+        // arrows: true,
+    });
+    $(".right_big_bn .swiper_section .swiper-button-prev").on('click',function(e) {
+        //e.preventDefault();
+        $(".right_big_bn .swiper_section .swiper_wrapper").slick("slickPrev");
+    });
+
+    $(".right_big_bn .swiper_section .swiper-button-next").on('click',function(e) {
+        //e.preventDefault();
+        $(".right_big_bn .swiper_section .swiper_wrapper").slick("slickNext");
+    });
+});
+
+
+
 
 // --------------편집장의 선택 탭-------------------------
 
