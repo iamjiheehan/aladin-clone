@@ -146,39 +146,39 @@ $(function () {
 
 // --------------------------이달의 주목도서 슬라이더
 
-$(function () {
-    $("#w_monthBook_type .w_booklist .swiper_wrapper").slick({
-        slidesToShow: 5,
-        slidesToScroll: 5,
-    });
-    $("#w_monthBook_type .white_circle_prev").on('click',function(e) {
-        // e.preventDefault();
-        $("#w_monthBook_type .w_booklist .swiper_wrapper").slick("slickPrev");
-    });
+// $(function () {
+//     $("#w_monthBook_type .w_booklist .swiper_wrapper").slick({
+//         slidesToShow: 5,
+//         slidesToScroll: 5,
+//     });
+//     $("#w_monthBook_type .white_circle_prev").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#w_monthBook_type .w_booklist .swiper_wrapper").slick("slickPrev");
+//     });
 
-    $("#w_monthBook_type .white_circle_next").on('click',function(e) {
-        // e.preventDefault();
-        $("#w_monthBook_type .w_booklist .swiper_wrapper").slick("slickNext");
-    });
+//     $("#w_monthBook_type .white_circle_next").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#w_monthBook_type .w_booklist .swiper_wrapper").slick("slickNext");
+//     });
     
-});
+// });
 // --------------------------이 주의 특가 슬라이더
 
-$(function () {
-    $("#w_specialPrice_type .w_booklist .swiper_wrapper").slick({
-        slidesToShow: 5,
-        slidesToScroll: 5,
-    });
-    $("#w_specialPrice_type .white_circle_prev").on('click',function(e) {
-        // e.preventDefault();
-        $("#w_specialPrice_type .w_booklist .swiper_wrapper").slick("slickPrev");
-    });
+// $(function () {
+//     $("#w_specialPrice_type .w_booklist .swiper_wrapper").slick({
+//         slidesToShow: 5,
+//         slidesToScroll: 5,
+//     });
+//     $("#w_specialPrice_type .white_circle_prev").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#w_specialPrice_type .w_booklist .swiper_wrapper").slick("slickPrev");
+//     });
 
-    $("#w_specialPrice_type .white_circle_next").on('click',function(e) {
-        // e.preventDefault();
-        $("#w_specialPrice_type .w_booklist .swiper_wrapper").slick("slickNext");
-    });
-});
+//     $("#w_specialPrice_type .white_circle_next").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#w_specialPrice_type .w_booklist .swiper_wrapper").slick("slickNext");
+//     });
+// });
 
 
 // --------------------------알라딘 스페셜 슬라이더
