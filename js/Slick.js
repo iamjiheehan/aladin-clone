@@ -1,3 +1,34 @@
+//--------------ebook 배너 슬라이더--------------
+
+$(function () {
+    var maxSlides = 3; 
+
+    $('.swiper-pagination .swiper-pagination-total').text(maxSlides);
+
+    $('.welcome_section1 .right_big_bn .swiper_section .swiper_wrapper').slick({
+        slidesToShow: 1, 
+        slidesToScroll: 1, 
+        infinite: true, 
+        speed: 500, 
+        cssEase: 'linear',
+    });
+
+    $('.welcome_section1 .right_big_bn .swiper_section .swiper_wrapper').on('afterChange', function (event, slick, currentSlide) {
+        var slide = currentSlide + 1;
+        $('.right_big_bn .swiper-pagination .swiper-pagination-current').text(slide);
+    });
+
+    $(".right_big_bn .swiper_section .swiper-button-prev").on('click',function(e) {
+        //e.preventDefault();
+        $(".right_big_bn .swiper_wrapper").slick("slickPrev");
+    });
+
+    $(".right_big_bn .swiper_section .swiper-button-next").on('click',function(e) {
+        //e.preventDefault();
+        $(".right_big_bn .swiper_wrapper").slick("slickNext");
+    });
+});
+
 //-------------- right_big_bn 슬라이더--------------
 
 $(function () {

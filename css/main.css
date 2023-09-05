@@ -669,6 +669,41 @@
     overflow: hidden;
 }
 
+.right_ebook_banner .swiper-pagination {
+    color: #737373;
+    font-size: 12px;
+    bottom: 10px;
+    left: 31px;
+    padding: 8px 15px 0 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.right_ebook_banner .swiper-button-next, .right_ebook_banner .swiper-button-prev {
+    position: absolute;
+    bottom: -2px;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.welcome_section2 .right_ebook_banner .swiper-button-prev {
+    background: url(https://image.aladin.co.kr/img/welcome/arrow-left.svg) no-repeat center / 6px auto;
+    left: -8px;
+    opacity: 0.5;
+}
+
+.welcome_section2 .right_ebook_banner .swiper-button-next {
+    background: url(https://image.aladin.co.kr/img/welcome/arrow-right.svg) no-repeat center / 6px auto;
+    left: 59px;
+    opacity: 0.5;
+}
+
 /* --------------------welcome-Section2 웰컴 섹션2------------------- */
 .welcome_section2 .best_top10 ol {
     height: 208px;
