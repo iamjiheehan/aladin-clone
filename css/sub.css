@@ -106,6 +106,12 @@
     text-align: center;
 }
 
+
+.Bcoverwrap .cover img {
+    max-width: 500px;
+}
+
+/* 회전 도서 호버 왼쪽 화살표 */
 .Bcoverwrap .arr2_left {
     position: absolute;
     z-index: 10;
@@ -127,6 +133,15 @@
     left: 5px;
 }
 
+.Bcoverwrap .leftarrow2 a {
+    top: 45%;
+    left: 10px;
+    position: absolute;
+}
+
+
+
+/* 회전 도서 호버 오른쪽 화살표 */
 .Bcoverwrap .arr2_right {
     position: absolute;
     z-index: 10;
@@ -148,6 +163,15 @@
     right: 5px;
 }
 
+
+/* 회전 도서 호버 왼쪽 && 오른쪽 화살표 모두 */
+
+
+.Bcoverwrap .leftarrow2 img, .Bcoverwrap .rightarrow2 img {
+    width: 19px;
+    text-align: left;
+}
+
 .leftarrow2.new span, .arr2_right.new span {
     display: block;
     width: 50px;
@@ -161,20 +185,31 @@
     text-indent: -100rem;
 }
 
+
+
+/*--- 도서 회전 속성 ---*/
+
+
+.book .imgbox {
+    border: 1px solid #ddd;
+}
+
+
+.book li {
+    -webkit-perspective: 1800px;
+    -moz-perspective: 1800px;
+    perspective: 1800px;
+    position: relative;
+    width: 100%;
+    float: left;
+    z-index: 1;
+}
+
 .c_back, .c_left {
     overflow: hidden;
 }
 
-.coverItem.default .c_front::after, .coverItem.bk-viewback .c_back::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0px 0px 12px 3px rgba(0, 0, 0, 0.05);
-}
-
+/* 회전 cursor */
 .book li .coverItem {
     cursor: url(https://image.aladin.co.kr/img/shop/mousecursor2.png), pointer !important;
     position: absolute;
@@ -187,10 +222,52 @@
     transition: transform .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
-.Bcoverwrap .cover img {
-    max-width: 500px;
+/* 도서 표지||앞면 */
+
+
+.book li .coverItem > div, .book li .c_front > div {
+    display: block;
+    position: absolute;
 }
 
-.swiper_sectionr .book .imgbox {
-    border: 1px solid #ddd;
+.coverItem.default .c_front {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: transform .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+
+
+/* 도서 책등 || 왼쪽 */
+.coverItem.default .c_left {
+    opacity: 1;
+    transform: rotateY(-90deg) translate3d(-43px,0,0);
+    transition: transform .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+
+
+/* 도서 뒷면 */
+
+.c_back {
+    height: 745px;
+}
+
+.coverItem.default .c_front::after, .coverItem.bk-viewback .c_back::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 12px 3px rgba(0, 0, 0, 0.05);
+}
+
+.coverItem.default .c_back {
+    -webkit-transform: rotate3d(0,1,0,-180deg) translate3d(0,0,92px);
+    -moz-transform: rotate3d(0,1,0,-180deg) translate3d(0,0,92px);
+    transform: rotate3d(0,1,0,-180deg) translate3d(0,0,92px);
+    box-shadow: -20px 40px 15px rgba(0,0,0,0.3);
+    transition: box-shadow .5s ease-in-out, transform .5s ease-in-out;
 }
