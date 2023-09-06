@@ -2079,7 +2079,7 @@
                                 <a href="#" class="top_sub2_title"
                                     >애덤 그랜트</a
                                 >&nbsp;(지은이),<span class="temp_PR10"></span>
-                                <a href="#" class="Ere_sub2_title">이경식</a
+                                <a href="#" class="top_sub2_title">이경식</a
                                 >&nbsp;(옮긴이)<span class="temp_PR10"></span>
                                 <a class="top_sub2_title" href="#"
                                     >한국경제신문</a
@@ -2225,7 +2225,6 @@
                                         />
                                     </a>
                                     <div
-                                        id="help_AddMileage"
                                         style="position: absolute; right: 0"
                                         class="np_popup"
                                     ></div>
@@ -2245,8 +2244,10 @@
                     </div>
                     <div class="info_list">
                         <ul>
-                            <li id="ExpectDeliveryDate">
-                                <div class="Litem">수령예상일</div>
+                            <!-- <li id="ExpectDeliveryDate">
+                                <div class="Litem">
+
+                                </div>
                                 <div class="Ritem">
                                     지금 택배로 주문하면 9월 8일 출고
                                 </div>
@@ -2264,7 +2265,6 @@
                                                 class="p_arrow_btn" /></span
                                     ></a>
                                     <div
-                                        id="help_allbookrelease"
                                         class="allbookrelease_layer"
                                     >
                                         <div class="layer_title2">
@@ -2313,13 +2313,162 @@
                                         </div>
                                     </div>
                                 </div>
+                            </li> -->
+                            <li id="ExpectDeliveryDate">
+                                <div class="Litem">
+                                    <a href="/events/wevent.aspx?EventId=211729"
+                                        ><div class="ytz_position">
+                                            <svg
+                                                x="0px"
+                                                y="0px"
+                                                viewBox="0 0 60 60"
+                                            >
+                                                <defs>
+                                                    <mask id="clock_mask">
+                                                        <g>
+                                                            <path
+                                                                fill="#fff"
+                                                                d="M30,55C16.2,55,5,43.8,5,30c0-9.5,5.4-17.9,13.3-22.1l-2.3-4.4C6.5,8.5,0,18.5,0,30c0,16.6,13.4,30,30,30s30-13.4,30-30h-5  C55,43.8,43.8,55,30,55z"
+                                                            ></path>
+                                                        </g>
+                                                    </mask>
+                                                </defs>
+                                                <circle
+                                                    cx="30"
+                                                    cy="30"
+                                                    r="27.5"
+                                                    fill="#fff"
+                                                ></circle>
+                                                <circle
+                                                    cx="30"
+                                                    cy="30"
+                                                    r="3"
+                                                    fill="#ffaf25"
+                                                ></circle>
+                                                <path
+                                                    d="M30,5c13.8,0,25,11.2,25,25S43.8,55,30,55S5,43.8,5,30S16.2,5,30,5 M30,0C13.4,0,0,13.4,0,30s13.4,30,30,30 s30-13.4,30-30S46.6,0,30,0L30,0z"
+                                                    fill="#ffe38c"
+                                                ></path>
+                                                <g
+                                                    class="c_number"
+                                                    fill="#ffaf25"
+                                                    style="
+                                                        font-weight: bold;
+                                                        font-style: italic;
+                                                        font-size: 12px;
+                                                        font-family: Malgun
+                                                                Gothic,
+                                                            Helvetica,
+                                                            sans-serif;
+                                                        letter-spacing: -2px;
+                                                    "
+                                                >
+                                                    <text x="45" y="35">3</text>
+                                                    <text x="12" y="19">
+                                                        11
+                                                    </text>
+                                                </g>
+                                                <polygon
+                                                    class="c_hour"
+                                                    fill="#ffaf25"
+                                                    points="17,29 17,31 30,33 30,27"
+                                                    data-svg-origin="30 30"
+                                                    transform="matrix(0.57358,0.81915,-0.81915,0.57358,37.3671,-11.7819)"
+                                                    style="
+                                                        transform-origin: 0px
+                                                            0px;
+                                                        opacity: 1;
+                                                    "
+                                                ></polygon>
+                                                <g mask="url(#clock_mask)">
+                                                    <path
+                                                        class="c_ani2"
+                                                        fill="none"
+                                                        style="
+                                                            stroke: rgb(
+                                                                255,
+                                                                175,
+                                                                37
+                                                            );
+                                                            stroke-width: 10;
+                                                            stroke-miterlimit: 10;
+                                                            stroke-dasharray: 150;
+                                                            stroke-dashoffset: 0;
+                                                            opacity: 1;
+                                                        "
+                                                        d="M57.5,29.5c0,0-1,15-9,22s-24,8-33,2s-14-15-13-27s10-19,15-22"
+                                                    ></path>
+                                                </g>
+                                            </svg></div
+                                    ></a>
+                                    <script type="text/javascript">
+                                        var clockhands = new TimelineMax({
+                                            repeat: -1,
+                                        });
+                                        clockhands
+                                            .to(".c_hour", 1, {
+                                                opacity: 1,
+                                                rotation: 180,
+                                                transformOrigin: "right",
+                                            })
+                                            .fromTo(
+                                                ".c_hour",
+                                                2.5,
+                                                {
+                                                    opacity: 1,
+                                                    rotation: 180,
+                                                    transformOrigin: "right",
+                                                },
+                                                {
+                                                    rotation: 415,
+                                                    transformOrigin: "right",
+                                                    ease: Power3.easeOut,
+                                                }
+                                            )
+                                            .to(".c_hour", 0.4, {
+                                                opacity: 0,
+                                                delay: 2,
+                                            });
+                                        var clockline = new TimelineMax({
+                                            repeat: -1,
+                                        });
+                                        clockline
+                                            .to(".c_ani2", 1, {
+                                                strokeDashoffset: "150",
+                                            })
+                                            .to(".c_ani2", 2.5, {
+                                                strokeDashoffset: "-=150",
+                                                strokeWidth: 10,
+                                                strokeMiterlimit: 10,
+                                                stroke: "#ffaf25",
+                                            })
+                                            .to(".c_ani2", 0.4, {
+                                                opacity: 0,
+                                                delay: 2,
+                                            });
+                                    </script>
+                                </div>
+                                <div class="Ritem ytz_space">
+                                    <a href="/events/wevent.aspx?EventId=211729"
+                                        ><span class="ytz_delivery"
+                                            >양탄자배송</span
+                                        ></a
+                                    ><br />지금 주문하면 내일 밤 11시
+                                    <span class="ytz_txt">잠들기전 배송</span>
+                                </div>
+                                <div class="Ritem">
+                                    (중구 서소문로 89-31 기준)
+                                    <a
+                                        href="javascript:FindZip();"
+                                        class="Ere_fs14 Ere_sub_blue"
+                                    >
+                                        지역변경</a
+                                    >
+                                </div>
                             </li>
                         </ul>
                     </div>
-                    <div
-                        id="wa_product_top1_wa_Top_Ranking_pnlRanking"
-                        class="info_list"
-                    >
+                    <div class="info_list">
                         <div class="font_sz15 line_ht18">
                             <a href="#">창의적사고/두뇌계발 주간 45위</a
                             ><span class="temp_PR10"></span>|<span
@@ -2334,7 +2483,6 @@
                                 /></a>
                                 <div style="position: relative">
                                     <div
-                                        id="help_SalesPoint"
                                         style="
                                             position: absolute;
                                             left: -100px;
@@ -2351,9 +2499,8 @@
                                     src="https://image.aladin.co.kr/img/shop/2012/icon_star9.png"
                                     style="margin-bottom: -4px"
                                 /> </a
-                            ><a class="Ere_sub_pink Ere_fs16 Ere_str">9.3 </a>
+                            ><a class="sub_pink">9.3 </a>
                             <div
-                                id="divRankLayer"
                                 style="
                                     z-index: 1000;
                                     padding: 0;
@@ -2375,7 +2522,6 @@
                                 <a href="#">이 책 어때요?</a>
                             </div>
                             <div
-                                id="divProductTopRightBookPleLayerRanking"
                                 class="star_layer"
                                 style="
                                     z-index: 99;
@@ -2385,90 +2531,7 @@
                                     margin-top: 5px;
                                     display: none;
                                 "
-                            >
-                                <div>
-                                    <div class="Ere_layerst_Tit7">
-                                        <div class="extC">
-                                            <img
-                                                style="
-                                                    cursor: pointer;
-                                                    margin-right: 1px;
-                                                "
-                                                src="https://image.aladin.co.kr/img/shop/2018/bookple_star_off.png"
-                                                name="bookpleItemRankImg"
-                                            /><img
-                                                style="
-                                                    cursor: pointer;
-                                                    margin-right: 1px;
-                                                "
-                                                src="https://image.aladin.co.kr/img/shop/2018/bookple_star_off.png"
-                                                name="bookpleItemRankImg"
-                                            /><img
-                                                style="
-                                                    cursor: pointer;
-                                                    margin-right: 1px;
-                                                "
-                                                src="https://image.aladin.co.kr/img/shop/2018/bookple_star_off.png"
-                                                name="bookpleItemRankImg"
-                                            /><img
-                                                style="
-                                                    cursor: pointer;
-                                                    margin-right: 1px;
-                                                "
-                                                src="https://image.aladin.co.kr/img/shop/2018/bookple_star_off.png"
-                                                name="bookpleItemRankImg"
-                                            /><img
-                                                style="
-                                                    cursor: pointer;
-                                                    margin-right: 1px;
-                                                "
-                                                src="https://image.aladin.co.kr/img/shop/2018/bookple_star_off.png"
-                                                name="bookpleItemRankImg"
-                                            />
-                                        </div>
-                                        <div class="close">
-                                            <a href="#"
-                                                ><img
-                                                    src="https://image.aladin.co.kr/img/shop/2018/btn_top_close1.png"
-                                            /></a>
-                                        </div>
-                                        <div class="Ere_line4"></div>
-                                        <div class="bt_list1">
-                                            <ul>
-                                                <li>
-                                                    <a href="#"
-                                                        ><img
-                                                            src="https://image.aladin.co.kr/img/shop/2018/icon_layercheck_off.png"
-                                                            class="Ere_MB_m8"
-                                                        />
-                                                        읽고 싶어요</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="#"
-                                                        currentreadstatus="0"
-                                                        ><img
-                                                            src="//image.aladin.co.kr/img/shop/2018/icon_layercheck_off.png"
-                                                            class="Ere_MB_m8"
-                                                        />
-                                                        읽고 있어요</a
-                                                    >
-                                                </li>
-                                                <li>
-                                                    <a href="#"
-                                                        ><img
-                                                            src="https://image.aladin.co.kr/img/shop/2018/icon_layercheck_off.png"
-                                                            class="Ere_MB_m8"
-                                                        />
-                                                        읽었어요</a
-                                                    >
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            ></div>
                         </div>
                         <div class="info_list" style="margin-bottom: 10px">
                             <ul>
@@ -2512,8 +2575,7 @@
                                     ></div>
                                 </li>
                                 <li>
-                                    <a
-                                        href="javascript:fn_helpLayer_Toggle_V2('Deduct');"
+                                    <a href="#"
                                         >소득공제 810원
                                         <img
                                             src="./img/p_arrow_down.gif"

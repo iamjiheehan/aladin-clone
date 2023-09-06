@@ -447,8 +447,11 @@
 
 /* 창의적 사고 섹션 */
 
-.layer_title7 {
-
+.sub_pink {
+    color: #eb217c;
+    text-decoration: none;
+    line-height: 1.5;
+    font-weight: bold;
 }
 
 .btn_thisbook {

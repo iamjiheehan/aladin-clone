@@ -98,6 +98,12 @@ ul, li {
     height: 30px;
 }
 
+.temp_H50 {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
 .temp_PR10 {
     padding-right: 10px;
 }
@@ -114,6 +120,10 @@ ul, li {
 
 .font_sz15{
     font-size: 15px;
+}
+
+.font_sz16{
+    font-size: 16px;
 }
 
 .font_sz24{
