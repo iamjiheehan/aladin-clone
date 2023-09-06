@@ -1,3 +1,5 @@
+/* -----------------------------첫번째 탭----------------------------- */
+
 .sub_wrap {
     width: 1060px;
     margin: 0 auto;
@@ -74,4 +76,11 @@
     letter-spacing: -0.04em;
     font-family: Malgun Gothic,'Segoe WPC', 'Segoe UI', 'Apple SD Gothic Neo', Helvetica, AppleGothic, Sans-serif;
     border: 1px solid #e5e5e5;
+}
+
+
+/* -----------------------------도서커버----------------------------- */
+
+.c_back, .c_left {
+    overflow: hidden;
 }
