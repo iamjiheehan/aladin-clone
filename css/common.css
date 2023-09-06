@@ -43,8 +43,6 @@ ul, li {
 
 .clear {
     clear: both;
-    margin: 0px;
-    padding: 0px;
 }
 
 .active {
@@ -63,6 +61,7 @@ ul, li {
     position: relative;
 }
 
+
 .bold {
     font-weight: bold;
 }
@@ -71,6 +70,18 @@ ul, li {
     margin: 0;
     padding: 0;
     height: 10px;
+}
+
+.temp_H15 {
+    margin: 0;
+    padding: 0;
+    height: 15px;
+}
+
+.temp_H20 {
+    margin: 0;
+    padding: 0;
+    height: 20px;
 }
 
 .temp_H30 {
@@ -87,6 +98,30 @@ ul, li {
     margin: 0;
     padding: 0;
     border-top: 1px solid #ccc;
+}
+
+.font_sz14{
+    font-size: 14px;
+}
+
+.font_sz15{
+    font-size: 15px;
+}
+
+.font_sz24{
+    font-size: 24px;
+}
+
+.textC {
+    text-align: center;
+}
+
+.line_ht11 {
+    line-height: 1.1;
+}
+
+.line_ht18 {
+    line-height: 1.8;
 }
 
 .inner, .gnb, .util {

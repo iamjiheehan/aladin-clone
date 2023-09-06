@@ -290,3 +290,238 @@
     transform: rotateY(180deg) translateZ(58px);
     background-size: cover;
 }
+
+.Bcoverwrap .prev_box {
+    margin: 0px auto;
+    padding: 0;
+    width: 500px;
+    text-align: center;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    font-size: 13px;
+}
+
+/* ---------------도서 정보 //우측 상단---------------------- */
+
+.Binfowrap {
+    /* margin: 0 0 0 60px; -----------------------------temp*/
+    padding: 0;
+    float: left;
+    width: 500px;
+}
+
+.Binfowrap .info {
+    margin: 0;
+    padding: 5px 0 0 0;
+    float: left;
+    width: 500px;
+    text-align: left;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.Binfowrap .info_list {
+    clear: both;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.Binfowrap .info_list ul li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 3px 0;
+    margin: 0;
+}
+
+/* 도서 정보 좌측 아이템 */
+.Binfowrap .info_list ul li .Litem {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    color: #222;
+}
+
+
+.Binfowrap .info_list ul li .Litem_P {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    top: 3px;
+}
+
+
+/* 도서 정보 우측 아이템 */
+.Binfowrap .info_list ul li .Ritem {
+    margin-left: 100px;
+    width: 460px;
+    padding-bottom: 3px;
+    color: #222;
+}
+
+
+.Binfowrap .info_list ul li .Ritem {
+    margin-left: 100px;
+    width: 400px;
+    padding-bottom: 3px;
+}
+
+.p_arrow_btn {
+    margin: 0 0 -3px 4px;
+}
+
+.txt_allbook {
+    color: #3774b1;
+    text-decoration: none;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* 출고 팝업창 */
+.allbookrelease_layer {
+    position: absolute;
+    z-index: 101;
+}
+
+.layer_title2 {
+    background: #fff;
+    position: relative;
+    margin: 0;
+    padding: 25px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px #ccc;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    width: 400px;
+
+    display: none;
+}
+
+.layer_title2 p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.layer_title2 .bt_list2 ul li {
+    list-style: none;
+    background: url(https://image.aladin.co.kr/img/shop/2018/icon_dot1.png) no-repeat 0 7px;
+    margin: 0;
+    padding: 0 0 7px 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    float: none;
+}
+
+.layer_title2 .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.layer_title2 .bt_list2 {
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+
+/* 더보기 버튼 */
+
+.layer_title2 .bt_list2 .btn_layermore {
+    display: inline-block;
+}
+.layer_title2 .bt_list2 .btn_layermore a {
+    text-decoration: none;
+    color: #e9573f!important;
+    font-size: 8px!important;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    padding: 0px 3px 3px 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #f4f4f4;
+    vertical-align: top;
+}
+
+.layer_title2 .bt_list2 .btn_layermore a:hover {
+    text-decoration: underline;
+}
+
+/* 창의적 사고 섹션 */
+
+.layer_title7 {
+
+}
+
+.btn_thisbook {
+    display: inline-block;
+
+}
+
+.btn_thisbook a{
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+    color: #fff!important;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    white-space: nowrap;
+    margin: 0;
+    padding: 1px 7px 4px 7px;
+    letter-spacing: -0.02em;
+    background: #0fa8ff;
+}
+
+.Binfowrap .info_list2 ul li {
+    list-style: none;
+    padding: 0 40px 0 0;
+    margin: 0;
+    float: left;
+    letter-spacing: -0.06em;
+}
+
+/* 수량 섹션 */
+
+.Binfowrap .info_list ul li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 3px 0;
+    margin: 0;
+}
+
+.input_box {
+    float: left;
+    border: 1px solid #cdcdcd;
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 91px;
+}
+
+.form_input {
+    border: 0;
+    padding: 11px 5px 11px 5px;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    color: #222;
+    width: 56px;
+    float: left;
+}
+
+.form_arrow {
+    float: right;
+    text-align: center;
+    border: 0;
+    margin: 0;
+    padding: 1px 0;
+    width: 23px;
+    background: #f8f8f8;
+    border-left: 1px solid #cdcdcd;
+    font-size: 0;
+}
+
+.form_arrow img {
+    width: 23px;
+    height: 21px;
+    text-align: right;
+}
