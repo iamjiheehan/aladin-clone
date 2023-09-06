@@ -533,7 +533,8 @@ ul, li {
 
 .floating_bn_box .left_bn {
     position: absolute;
-    left: -112px;
+    /* left: -112px; */
+    left: -153px;
     top: 0;
 }
 
