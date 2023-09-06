@@ -132,6 +132,10 @@ ul, li {
     line-height: 1.8;
 }
 
+.grey2 {
+    color: #222;
+}
+
 .inner, .gnb, .util {
     display: flex;
     justify-content: space-between;
