@@ -106,7 +106,6 @@
     text-align: center;
 }
 
-
 .Bcoverwrap .cover img {
     max-width: 500px;
 }
@@ -133,7 +132,7 @@
     left: 5px;
 }
 
-.Bcoverwrap .leftarrow2 a {
+.Bcoverwrap .arr2_left a {
     top: 45%;
     left: 10px;
     position: absolute;
@@ -164,15 +163,21 @@
 }
 
 
+.Bcoverwrap .arr2_right a {
+    top: 45%;
+    right: 10px;
+    position: absolute;
+}
+
 /* 회전 도서 호버 왼쪽 && 오른쪽 화살표 모두 */
 
 
-.Bcoverwrap .leftarrow2 img, .Bcoverwrap .rightarrow2 img {
+.Bcoverwrap .arr2_left img, .Bcoverwrap .arr2_right img {
     width: 19px;
     text-align: left;
 }
 
-.leftarrow2.new span, .arr2_right.new span {
+.arr2_left.new span, .arr2_right.new span {
     display: block;
     width: 50px;
     height: 50px;
@@ -185,6 +190,15 @@
     text-indent: -100rem;
 }
 
+
+.arr2_left:hover, .arr2_right:hover{
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+    opacity: 1;
+}
 
 
 /*--- 도서 회전 속성 ---*/
