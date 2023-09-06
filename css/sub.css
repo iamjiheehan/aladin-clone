@@ -423,6 +423,27 @@
     padding: 0;
 }
 
+/* 양탄자배송 섹션 */
+.ytz_delivery {
+    display: inline-block;
+    background: #ffab00;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.4em;
+    color: #fff;
+    border-radius: 15px;
+    padding: 1px 7px 2px 7px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.ytz_position {
+    margin-top: 0px;
+    width: 65px;
+    height: 65px;
+}
+
+
 /* 더보기 버튼 */
 
 .layer_title2 .bt_list2 .btn_layermore {
@@ -605,4 +626,36 @@
     padding: 0 2% 0 0;
     margin: 0;
     float: left;
+}
+
+.info_list3 {
+    float: left;
+    clear: both;
+    padding: 0;
+    margin: 0 0 25px 0;
+    width: 450px;
+}
+
+.Binfowrap .info_more {
+    float: right;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: 50px;
+}
+
+/* ---------------------스폰서 광고 섹션 ---------------------*/
+.bannerwrap_ad {
+    width: 1060px;
+    height: 115px;
+    margin: 0 auto;
+    padding: 0 30px;
+    background: url(//image.aladin.co.kr/img/shop/2018/ad_banner_bgimg.jpg) top right no-repeat;
+    text-align: center;
+}
+
+.bannerwrap_ad ul li {
+    float: left;
+    width: 235px;
+    padding-right: 15px;
 }
