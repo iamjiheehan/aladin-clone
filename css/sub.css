@@ -23,7 +23,6 @@
     text-align: left;
 }
 
-
 .top_title_wrap .left .tlist li {
     list-style: none;
     padding-bottom: 12px;
@@ -36,9 +35,17 @@
     padding-top: 10px;
 }
 
-.top_main_title{
+.top_main_title {
     font-size: 26px;
-    font-family: "Noto Sans KR",Malgun Gothic,'Segoe WPC', 'Segoe UI', 'Apple SD Gothic Neo', Helvetica, AppleGothic, Sans-serif;
+    font-family:
+        "Noto Sans KR",
+        Malgun Gothic,
+        "Segoe WPC",
+        "Segoe UI",
+        "Apple SD Gothic Neo",
+        Helvetica,
+        AppleGothic,
+        Sans-serif;
     color: #222;
     text-decoration: none;
     line-height: 1.5;
@@ -74,13 +81,18 @@
     color: #555;
     margin-right: 5px;
     letter-spacing: -0.04em;
-    font-family: Malgun Gothic,'Segoe WPC', 'Segoe UI', 'Apple SD Gothic Neo', Helvetica, AppleGothic, Sans-serif;
+    font-family:
+        Malgun Gothic,
+        "Segoe WPC",
+        "Segoe UI",
+        "Apple SD Gothic Neo",
+        Helvetica,
+        AppleGothic,
+        Sans-serif;
     border: 1px solid #e5e5e5;
 }
 
-
 /* -----------------------------도서커버----------------------------- */
-
 
 /* 도서커버 섹션 컨테이너 */
 .book_wrap {
@@ -128,7 +140,8 @@
 }
 
 .arr2_left.new span {
-    background: url(https://image.aladin.co.kr/img/welcome/arrow-left-white.svg) rgba(58, 58, 58, 0.4) no-repeat center / 15px auto;
+    background: url(https://image.aladin.co.kr/img/welcome/arrow-left-white.svg) rgba(58, 58, 58, 0.4) no-repeat center /
+        15px auto;
     left: 5px;
 }
 
@@ -137,8 +150,6 @@
     left: 10px;
     position: absolute;
 }
-
-
 
 /* 회전 도서 호버 오른쪽 화살표 */
 .Bcoverwrap .arr2_right {
@@ -158,10 +169,10 @@
 }
 
 .arr2_right.new span {
-    background: url(https://image.aladin.co.kr/img/welcome/arrow-right-white.svg) rgba(58, 58, 58, 0.4) no-repeat center / 15px auto;
+    background: url(https://image.aladin.co.kr/img/welcome/arrow-right-white.svg) rgba(58, 58, 58, 0.4) no-repeat center /
+        15px auto;
     right: 5px;
 }
-
 
 .Bcoverwrap .arr2_right a {
     top: 45%;
@@ -171,13 +182,14 @@
 
 /* 회전 도서 호버 왼쪽 && 오른쪽 화살표 모두 */
 
-
-.Bcoverwrap .arr2_left img, .Bcoverwrap .arr2_right img {
+.Bcoverwrap .arr2_left img,
+.Bcoverwrap .arr2_right img {
     width: 19px;
     text-align: left;
 }
 
-.arr2_left.new span, .arr2_right.new span {
+.arr2_left.new span,
+.arr2_right.new span {
     display: block;
     width: 50px;
     height: 50px;
@@ -190,8 +202,8 @@
     text-indent: -100rem;
 }
 
-
-.arr2_left:hover, .arr2_right:hover{
+.arr2_left:hover,
+.arr2_right:hover {
     -webkit-transition: none;
     -moz-transition: none;
     -ms-transition: none;
@@ -200,16 +212,13 @@
     opacity: 1;
 }
 
-
 /*--- 도서 회전 속성 ---*/
 
-
-.book .imgbox {
+#divFlipImg .book .imgbox {
     border: 1px solid #ddd;
 }
 
-
-.book li {
+#divFlipImg .book li {
     -webkit-perspective: 1800px;
     -moz-perspective: 1800px;
     perspective: 1800px;
@@ -219,69 +228,65 @@
     z-index: 1;
 }
 
-.c_back, .c_left {
-    overflow: hidden;
-}
-
-/* 회전 cursor */
-.book li .coverItem {
-    cursor: url(https://image.aladin.co.kr/img/shop/mousecursor2.png), pointer !important;
-    position: absolute;
+#divFlipImg section {
     width: 100%;
+    height: 100%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    -moz-transition: -moz-transform .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    transition: transform .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    -moz-transition: -moz-transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
-/* 도서 표지||앞면 */
-
-
-.book li .coverItem > div, .book li .c_front > div {
-    display: block;
+#divFlipImg section .imgbox {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.coverItem.default .c_front {
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    transition: transform .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+#divFlipImg section .book {
+    position: relative;
+    width: 502px;
+    height: 745px;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    cursor: url("../img/sub_book-cursor.png"), pointer;
 }
-
-
 
 /* 도서 책등 || 왼쪽 */
-.coverItem.default .c_left {
-    opacity: 1;
-    transform: rotateY(-90deg) translate3d(-43px,0,0);
-    transition: transform .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+#divFlipImg section .book:before {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 100%;
+    transform-origin: left;
+    background: url("../img/sub_book-left.jpg");
+    background-position: center;
+    transform: rotateY(90deg);
+    background-size: cover;
 }
-
-
 
 /* 도서 뒷면 */
 
-.c_back {
-    height: 745px;
-}
-
-.coverItem.default .c_front::after, .coverItem.bk-viewback .c_back::after {
+#divFlipImg section .book:after {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
-    box-shadow: inset 0px 0px 12px 3px rgba(0, 0, 0, 0.05);
-}
-
-.coverItem.default .c_back {
-    -webkit-transform: rotate3d(0,1,0,-180deg) translate3d(0,0,92px);
-    -moz-transform: rotate3d(0,1,0,-180deg) translate3d(0,0,92px);
-    transform: rotate3d(0,1,0,-180deg) translate3d(0,0,92px);
-    box-shadow: -20px 40px 15px rgba(0,0,0,0.3);
-    transition: box-shadow .5s ease-in-out, transform .5s ease-in-out;
+    transform-origin: center;
+    background: url("../img/sub_book-back.jpg");
+    background-position: center;
+    transform: rotateY(180deg) translateZ(58px);
+    background-size: cover;
 }
