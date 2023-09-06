@@ -313,7 +313,7 @@
     margin: 0;
     padding: 5px 0 0 0;
     float: left;
-    width: 500px;
+    width: 560px;
     text-align: left;
     font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
     font-size: 15px;
@@ -474,7 +474,7 @@
 
 .Binfowrap .info_list2 ul li {
     list-style: none;
-    padding: 0 40px 0 0;
+    padding: 0 40px 0 0 !important;
     margin: 0;
     float: left;
     letter-spacing: -0.06em;
@@ -524,4 +524,73 @@
     width: 23px;
     height: 21px;
     text-align: right;
+}
+
+/* -----------------장바구니 및 3개 버튼 섹션 ------------------*/
+
+/* 장바구니 버튼 */
+
+.btn_cart .btn_buyitnow .btn_gift{
+    display: inline-block;
+
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn_cart a{
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    white-space: nowrap;
+    display: block;
+    background: #df307f;
+    margin: 0;
+    padding: 17px 30px 17px 27px;
+}
+
+/* 구매하기 버튼 */
+
+
+.btn_buyitnow a{
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    white-space: nowrap;
+    background: #e24457;
+    display: block;
+    margin: 0;
+    padding: 17px 48px 17px 45px;
+}
+
+
+/* 선물하기, 보관하기 버튼 */
+
+.btn_gift a{
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+    border: solid 1px #df307f;
+    color: #df307f;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 16px 29px 16px 29px;
 }
