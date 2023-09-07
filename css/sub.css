@@ -628,7 +628,7 @@
     float: left;
 }
 
-.info_list3 {
+.Binfowrap .info_list3 {
     float: left;
     clear: both;
     padding: 0;
@@ -643,6 +643,7 @@
     text-align: right;
     width: 50px;
 }
+
 
 /* ---------------------스폰서 광고 섹션 ---------------------*/
 .bannerwrap_ad {
