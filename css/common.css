@@ -41,13 +41,6 @@ ul, li {
     opacity: 1;
 }
 
-.floatL{
-    float: left;
-}
-
-.marginL4 {
-    margin-left: 4px;
-}
 
 .clear {
     clear: both;
@@ -72,6 +65,19 @@ ul, li {
 
 .bold {
     font-weight: bold;
+}
+
+
+.floatL{
+    float: left;
+}
+
+.floatR {
+    float: right;
+}
+
+.marginL4 {
+    margin-left: 4px;
 }
 
 .temp_H10 {
@@ -104,14 +110,40 @@ ul, li {
     height: 50px;
 }
 
+.temp_H60 {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+}
+
 .temp_PR10 {
     padding-right: 10px;
+}
+
+.temp_PB10 {
+    padding-bottom: 10px;
 }
 
 .temp_line1 {
     margin: 0;
     padding: 0;
     border-top: 1px solid #ccc;
+}
+
+.temp_line2 {
+    margin: 45px 0 40px 0;
+    padding: 0;
+    border-top: 1px solid #d5d5d5;
+}
+
+.font_pink {
+    color: #eb217c;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.font_str {
+    font-weight: 600;
 }
 
 .font_sz14{
@@ -144,6 +176,19 @@ ul, li {
 
 .grey2 {
     color: #222;
+}
+
+.btn_check {
+    display: inline-block;
+
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #c8c8c8;
 }
 
 .inner, .gnb, .util {

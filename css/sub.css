@@ -95,13 +95,6 @@
 /* -----------------------------도서커버----------------------------- */
 
 /* 도서커버 섹션 컨테이너 */
-.book_wrap {
-    width: 1060px;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-}
-
 .Bcoverwrap {
     margin: 0;
     padding: 0;
@@ -660,3 +653,161 @@
     width: 235px;
     padding-right: 15px;
 }
+
+
+/* ---------------------상품 정보 및 주제 분류--------------------- */
+
+.mid_wrap {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+}
+
+.mid_wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mid_wrap a:hover {
+    text-decoration: underline !important;
+}
+
+.mid_R {
+    width: 810px;
+    float: left;
+    margin: 0 0 0 250px;
+    padding: 5px 0 0px 0;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.mid_LL {
+    display: block;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    /* padding: 5px 100px 0 0; */
+    width: 150px;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    color: #222;
+    font-size: 21px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.mid_LS {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0px 0 0 0;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    color: #222;
+    font-size: 21px;
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: -0.02em;
+}
+
+.mid_info_list1 {
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.mid_info_list1 ul li {
+    list-style: none;
+    padding: 0 25px 0 0;
+    margin: 0;
+    float: left;
+    color: #333;
+}
+
+.btn_check a {
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+    color: #555;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 1px 7px 4px 7px;
+    letter-spacing: -0.02em;
+}
+
+.mid_R .mid_info_list2 ul li {
+    list-style: none;
+    background: url(../img/icon_dot1.png) no-repeat 0 9px;
+    margin: 0;
+    padding: 0 0 6px 10px;
+    color: #333;
+    letter-spacing: -0.02em;
+}
+
+/* 원서 및 번역서 섹션 */
+
+.btn_sm_keep {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #e24457;
+}
+
+.btn_sm_keep a {
+    white-space: nowrap;
+    outline: 0;
+    color: #df307f;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 1px 7px 4px 7px;
+    letter-spacing: -0.02em;
+}
+
+.btn_sm_cart {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    background: #df307f;
+}
+
+.btn_sm_cart a {
+    white-space: nowrap;
+    outline: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 2px 7px 5px 7px;
+    letter-spacing: -0.02em;
+}
+
