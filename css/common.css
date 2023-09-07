@@ -84,6 +84,10 @@ ul, li {
     margin-left: 4px;
 }
 
+.marginL10 {
+    margin-left: 10px;
+}
+
 .temp_H10 {
     margin: 0;
     padding: 0;
@@ -150,6 +154,11 @@ ul, li {
     font-weight: 600;
 }
 
+.font_sz13{
+    font-size: 13px;
+}
+
+
 .font_sz14{
     font-size: 14px;
 }
@@ -180,6 +189,10 @@ ul, li {
 
 .grey2 {
     color: #222;
+}
+
+.grey8{
+    color: #888;
 }
 
 .btn_check {

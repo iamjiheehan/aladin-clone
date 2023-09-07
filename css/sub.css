@@ -839,7 +839,7 @@
     height: 15px;
     margin: 0 3px;
     border-radius: 50%;
-    background: #000;
+    background: #333333;
     opacity: 0.2;
     border: none;
     font-size: 0; 
@@ -851,3 +851,6 @@
 .dots_custom li.slick-active button {
     opacity: 1;
 }
+
+/* ------------------------------책속에서 섹션------------------------------ */
+
