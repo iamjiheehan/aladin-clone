@@ -41,6 +41,10 @@ ul, li {
     opacity: 1;
 }
 
+.opacity_off {
+    opacity: 0;
+}
+
 
 .clear {
     clear: both;
