@@ -854,3 +854,83 @@
 
 /* ------------------------------책속에서 섹션------------------------------ */
 
+
+.mid_R .line_list ul li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 15px 0;
+    margin: 0;
+}
+
+.mid_R .line_list ul li .Rconts2 .page {
+    padding-right: 5px;
+    color: #3885c9;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: myriad;
+    font-style: italic;
+    letter-spacing: -0.02em;
+}
+
+.mid_R .line_list ul li .Rconts2 span {
+    display: block;
+}
+
+
+.btn_more {
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+    color: #444;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    white-space: nowrap;
+    background: #f3f3f3;
+    margin: 0;
+    padding: 8px 0px 10px 0px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn_more:hover {
+    background: #ececec;
+    margin: 0;
+    text-decoration: none;
+    -webkit-transform: translateY(3px) !important;
+    transform: translateY(3px) !important;
+}
+
+
+.btn_more a:hover .more_arrow:after {
+    color: #009ef8;
+    -webkit-transform: rotate(135deg) translate(2px, -2px);
+    transform: rotate(135deg) translate(2px, -2px);
+}
+
+.more_arrow {
+    display: inline;
+    position: relative;
+    margin-left: 5px;
+}
+
+.more_arrow:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: -1px;
+    margin: auto;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    color: #000;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-transition: color ease-out .2s,-webkit-transform ease-out .2s;
+    transition: color ease-out .2s,-webkit-transform ease-out .2s;
+    transition: color ease-out .2s,transform ease-out .2s;
+    transition: color ease-out .2s,transform ease-out .2s,-webkit-transform ease-out .2s;
+}
