@@ -84,6 +84,10 @@ ul, li {
     margin-left: 4px;
 }
 
+.marginL7 {
+    margin-left: 7px;
+}
+
 .marginL10 {
     margin-left: 10px;
 }
@@ -132,6 +136,10 @@ ul, li {
     padding-bottom: 10px;
 }
 
+.temp_PT10 {
+    padding-top: 10px;
+}
+
 .temp_line1 {
     margin: 0;
     padding: 0;
@@ -154,6 +162,10 @@ ul, li {
     font-weight: 600;
 }
 
+.font_normal {
+    font-weight: normal;
+}
+
 .font_sz13{
     font-size: 13px;
 }
@@ -169,6 +181,10 @@ ul, li {
 
 .font_sz16{
     font-size: 16px;
+}
+
+.font_sz18{
+    font-size: 18px;
 }
 
 .font_sz24{
@@ -189,6 +205,15 @@ ul, li {
 
 .grey2 {
     color: #222;
+}
+
+.grey3 {
+    color: #333;
+}
+
+.grey7 {
+    color: #777;
+    text-decoration: none;
 }
 
 .grey8{
