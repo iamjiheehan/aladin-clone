@@ -828,16 +828,24 @@
 }
 
 /* 슬라이더 dot속성 */
+.dots_custom {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .dots_custom button{
     width: 15px;
     height: 15px;
     margin: 0 3px;
-    display: inline-block;
     border-radius: 50%;
     background: #000;
     opacity: 0.2;
     border: none;
     font-size: 0; 
+    margin: 0;
+    padding: 5px 0 0 0;
+    text-align: center;
 }
 
 .dots_custom li.slick-active button {
