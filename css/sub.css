@@ -1383,3 +1383,74 @@
     float:right;
     margin-top:5px;
 }
+
+/* 구매자, 공감순  */
+
+.Btitle_box {
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.Btitle_box .Tlist_left {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.Btitle_box .Tlist_left ul li {
+    float: left;
+    list-style: none;
+    margin: 0 0;
+    padding: 0 25px 0 5px;
+    color: #333;
+    font-size: 16px;
+    text-align: left;
+}
+
+.Btitle_box .Tlist_right {
+    float: right;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 15px;
+}
+
+.Btitle_box .Tlist_left ul li .on {
+    color: #0fa8ff;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    padding: 0;
+}
+
+.blog_list3 ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 8px 0px;
+    line-height: 1.8;
+    color: #333;
+    letter-spacing: -0.02em;
+}
+
+
+
+.hundred_list .HL_write {
+    float: left;
+    margin: 0;
+    padding: 0 0 0 0;
+    width: 655px;
+    font-size: 15px;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    color: #333;
+    letter-spacing: -0.02em;
+    line-height: 1.6;
+}
+.hundred_list .HL_star {
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 0;
+    text-align: left;
+    width: 130px;
+}

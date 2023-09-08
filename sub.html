@@ -2020,19 +2020,15 @@
         <div style="padding: 3px 0 2px 0"></div>
         <div class="sub_wrap">
             <!-- 우측 상단 배너 -->
-            <div
-                class="goodsbn_wrap"
-            >
+            <div class="goodsbn_wrap">
                 <div class="goodsbn_box">
-                    <a
-                        href="javascript:void(0);"
+                    <a href="javascript:void(0);"
                         ><img
                             src="https://image.aladin.co.kr/img/bn/book/2023/03/230906_p_fl1.png"
                     /></a>
                     <div class="goodsbn_close">
                         <a href="javascript:void(0);"
-                            ><img
-                                src="./img/goods_bn_close.png"
+                            ><img src="./img/goods_bn_close.png"
                         /></a>
                     </div>
                 </div>
@@ -2534,7 +2530,7 @@
                                             </div>
                                         </div>
                                         <div
-                                            class="Ere_prod_price"
+                                            class="prod_price"
                                             style="padding: 0"
                                         ></div>
                                     </div>
@@ -2580,7 +2576,7 @@
                                     <div style="position: relative">
                                         <div
                                             id="divUsedSell"
-                                            class="Ere_layerst_list"
+                                            class="layerst_list"
                                             style="
                                                 position: absolute;
                                                 background-color: white;
@@ -4097,7 +4093,7 @@
                                     />
                                     <div style="position: relative">
                                         <div
-                                            class="Ere_layerst_list3"
+                                            class="layerst_list3"
                                             id="Recommend_486792"
                                             style="
                                                 position: absolute;
@@ -4146,7 +4142,7 @@
                                     />
                                     <div style="position: relative">
                                         <div
-                                            class="Ere_layerst_list3"
+                                            class="layerst_list3"
                                             id="Recommend_486793"
                                             style="
                                                 position: absolute;
@@ -5090,7 +5086,7 @@
                                                     style="width: 13.5%"
                                                 >
                                                     <img
-                                                        src="//image.aladin.co.kr/img/shop/2018/analysis_bg1.png"
+                                                        src="https://image.aladin.co.kr/img/shop/2018/analysis_bg1.png"
                                                     />
                                                 </div>
                                                 <div class="per">16.2%</div>
@@ -5126,7 +5122,7 @@
                                                     style="width: 4.5%"
                                                 >
                                                     <img
-                                                        src="//image.aladin.co.kr/img/shop/2018/analysis_bg1.png"
+                                                        src="https://image.aladin.co.kr/img/shop/2018/analysis_bg1.png"
                                                     />
                                                 </div>
                                                 <div class="per">5.4%</div>
@@ -5198,7 +5194,7 @@
                                                     style="width: 0%"
                                                 >
                                                     <img
-                                                        src="//image.aladin.co.kr/img/shop/2018/analysis_bg1.png"
+                                                        src="https://image.aladin.co.kr/img/shop/2018/analysis_bg1.png"
                                                     />
                                                 </div>
                                                 <div class="per">0%</div>
@@ -5270,31 +5266,842 @@
                 <!-- 리뷰 형태 선택, 스포일러, 글 작성 유의사항  -->
                 <div class="hundred_box">
                     <div class="Hleft2">
-                        <div class="myreview ">
-                            <div class="re_select" style="position:relative;">
+                        <div class="myreview">
+                            <div class="re_select" style="position: relative">
                                 <span class="p_nonunder">카테고리</span>
-                                <img class="re_select-icon" src="./img/icon_arrow_down_L.png" align="absmiddle">
-                                    <div class="layer_list hidden" id="div_commentReviewCategory">
-                                        먼저 <span style="font-weight:bold; cursor:pointer;">로그인 </span>해주세요.
-                                    </div>
+                                <img
+                                    class="re_select-icon"
+                                    src="./img/icon_arrow_down_L.png"
+                                    align="absmiddle"
+                                />
+                                <div
+                                    class="layer_list hidden"
+                                    id="div_commentReviewCategory"
+                                >
+                                    먼저
+                                    <span
+                                        style="
+                                            font-weight: bold;
+                                            cursor: pointer;
+                                        "
+                                        >로그인 </span
+                                    >해주세요.
+                                </div>
                             </div>
                             <div class="clear"></div>
                         </div>
                     </div>
-                    <div class="Hleft2" style="padding-top:10px;">
+                    <div class="Hleft2" style="padding-top: 10px">
                         <a href="#" class="grey9">
-                            <img id="imgSpoiler" src="./img/icon_check2_off.png" style="margin-bottom:-4px;">스포일러 포함 </a>
-                        <input type="checkbox" id="isspoiler" style="width:0;height:0;">
-                        <input type="hidden" id="allowspoiler" value="0">
+                            <img
+                                id="imgSpoiler"
+                                src="./img/icon_check2_off.png"
+                                style="margin-bottom: -4px"
+                            />스포일러 포함
+                        </a>
+                        <input
+                            type="checkbox"
+                            id="isspoiler"
+                            style="width: 0; height: 0"
+                        />
+                        <input type="hidden" id="allowspoiler" value="0" />
                     </div>
-                    <div class="Hright2" style="padding-top:10px;">
-                        <a href="#">글 작성 유의사항 <img src="./img/icon_arrow_down_L.png" style="margin-bottom:-2px;"></a>
-                        <div style="position: absolute; right:0; " class="np_popup"></div>
+                    <div class="Hright2" style="padding-top: 10px">
+                        <a href="#"
+                            >글 작성 유의사항
+                            <img
+                                src="./img/icon_arrow_down_L.png"
+                                style="margin-bottom: -2px"
+                        /></a>
+                        <div
+                            style="position: absolute; right: 0"
+                            class="np_popup"
+                        ></div>
                     </div>
-                    <div class="clear"></div>	
+                    <div class="clear"></div>
                 </div>
                 <!-- 여백 -->
                 <div class="temp_H30"></div>
+                <!-- 리스트 타이틀 시작 -->
+                <div class="Btitle_box" id="CommentReviewTab">
+                    <div class="Tlist_left">
+                        <ul>
+                            <li>
+                                <a
+                                    id="tabOrderer"
+                                    href="javascript:void(0);"
+                                    class="on"
+                                >
+                                    구매자 (8)</a
+                                >
+                            </li>
+                            <li>
+                                <a id="tabTotal" href="javascript:void(0);">
+                                    전체 (64)</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="hidden" id="nOrderer" value="8" />
+                    <div class="Tlist_right">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" class="font_blue">
+                                    <span id="CommentReviewSelectTitle"
+                                        >공감순</span
+                                    >
+                                    <img
+                                        src="./img/arrow_down_blue.png"
+                                        style="margin-bottom: -2px"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div
+                            id="CommentReviewSelect"
+                            class="hidden"
+                            style="position: relative; display: none"
+                        >
+                            <div
+                                class="layerst_list2"
+                                style="
+                                    position: absolute;
+                                    background-color: white;
+                                    left: -20px;
+                                "
+                            >
+                                <ul>
+                                    <li
+                                        style="
+                                            width: 180px;
+                                            padding-left: 0;
+                                            font-size: 15px;
+                                        "
+                                    >
+                                        <a
+                                            style="padding: 8px 18px"
+                                            href="javascript:void(0);"
+                                            >공감순
+                                        </a>
+                                    </li>
+                                    <li
+                                        style="
+                                            width: 180px;
+                                            padding-left: 0;
+                                            font-size: 15px;
+                                        "
+                                    >
+                                        <a
+                                            style="padding: 8px 18px"
+                                            href="javascript:void(0);"
+                                            >최신 등록순</a
+                                        >
+                                    </li>
+                                    <li
+                                        style="
+                                            width: 180px;
+                                            padding-left: 0;
+                                            font-size: 15px;
+                                        "
+                                    >
+                                        <a
+                                            style="padding: 8px 18px"
+                                            href="javascript:void(0);"
+                                            >별점순</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- 여백 -->
+                <div class="temp_H30"></div>
+                <!-- 구매자 평 -->
+                <div id="CommentReviewList">
+                    <div class="review_list_wrap">
+                        <ul>
+                            <div class="hundred_list">
+                                <div class="HL_star">
+                                    <img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_off.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;
+                                </div>
+                                <div class="HL_write">
+                                    <div class="blog_list3">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="javascript:void(0);"
+                                                >
+                                                </a>
+                                                <div
+                                                    class=""
+                                                    id="div_commentReviewPaper12646108"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <div
+                                                            id="spnPaperSpoiler12646108"
+                                                            style="
+                                                                display: none;
+                                                            "
+                                                        >
+                                                            이 글에는 스포일러가
+                                                            포함되어 있습니다.
+                                                            보시겠습니까?<br />
+                                                            회색 영역을 클릭하면
+                                                            내용을 확인할 수
+                                                            있습니다.
+                                                        </div>
+                                                    </a>
+                                                    <div
+                                                        id="spnPaper12646108"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_ToggleCommentReviewPaper('12646108')"
+                                                        >
+                                                            싱크어게인, 안다는
+                                                            생각에 머물지 않고
+                                                            끊임없이 다시
+                                                            생각해보는 것을
+                                                            의미한다. 과거
+                                                            어느때보다 급변하는
+                                                            시대를 살고 있는
+                                                            요즈음 더욱 중요하게
+                                                            느껴지는 말이다.
+                                                            오리지널스보다 더욱
+                                                            원숙해진 애덤
+                                                            그랜트의 글솜씨가
+                                                            독자를 즐겁게
+                                                            해준다. 후반부에
+                                                            책의 핵심만
+                                                            요약해주는 센스도
+                                                            여전하다. </a
+                                                        ><a
+                                                            href="javascript:void(0);"
+                                                            target="_blank"
+                                                            ><img
+                                                                src="./img/icon_ano_page.png"
+                                                                style="
+                                                                    margin-bottom: -3px;
+                                                                "
+                                                        /></a>
+                                                        <img
+                                                            src="./img/icon_label_buy.png"
+                                                            style="
+                                                                margin-bottom: -4px;
+                                                            "
+                                                            alt="구매"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="left">
+                                                    <a
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        href="#"
+                                                        >Kletos</a
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >2021-05-26</span
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >공감 (11)</span
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="grey8 font_sz13"
+                                                        >댓글 (0)</a
+                                                    >
+                                                </div>
+                                                <div class="right">
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_CommentReview_ThanksTo(this, '/blog/popup/wpaper_thanksto_V2.aspx?PaperId=12646108&amp;ItemId=296919110');"
+                                                            >Thanks to</a
+                                                        >
+                                                    </div>
+
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_paper_recommend('CommentReview', 'recom', 12646108);"
+                                                            >공감</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="temp_H20"></div>
+
+                            <div class="hundred_list">
+                                <div class="HL_star">
+                                    <img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;
+                                </div>
+                                <div class="HL_write">
+                                    <div class="blog_list3">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="javascript:void(0);"
+                                                    onclick="fn_ToggleCommentReviewPaper('12828574')"
+                                                >
+                                                </a>
+                                                <div
+                                                    class=""
+                                                    id="div_commentReviewPaper12828574"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        onclick="fn_ToggleCommentReviewPaper('12828574')"
+                                                    >
+                                                        <div
+                                                            id="spnPaperSpoiler12828574"
+                                                            style="
+                                                                display: none;
+                                                            "
+                                                        >
+                                                            이 글에는 스포일러가
+                                                            포함되어 있습니다.
+                                                            보시겠습니까?<br />
+                                                            회색 영역을 클릭하면
+                                                            내용을 확인할 수
+                                                            있습니다.
+                                                        </div>
+                                                    </a>
+                                                    <div
+                                                        id="spnPaper12828574"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_ToggleCommentReviewPaper('12828574')"
+                                                        >
+                                                            확신을 내려놓고
+                                                            ‘다시 생각하라‘는
+                                                            말이 뻔하게만
+                                                            느껴진다면... 다시
+                                                            생각봐야 한다!
+                                                            당신은 더닝-크루거
+                                                            클럽의 회원일지도
+                                                            모른다. 여기엔
+                                                            확신과 고집, 설득과
+                                                            협상, 학습과 인생에
+                                                            관한 이야기가
+                                                            담겨있다. </a
+                                                        ><a
+                                                            href="javascript:void(0);"
+                                                            target="_blank"
+                                                            ><img
+                                                                src="./img/icon_ano_page.png"
+                                                                style="
+                                                                    margin-bottom: -3px;
+                                                                "
+                                                        /></a>
+                                                        <img
+                                                            src="./img/icon_label_buy.png"
+                                                            style="
+                                                                margin-bottom: -4px;
+                                                            "
+                                                            alt="구매"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="left">
+                                                    <a
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        href="#"
+                                                        >라딘알</a
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >2021-08-01</span
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >공감 (5)</span
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="grey8 font_sz13"
+                                                        >댓글 (0)</a
+                                                    >
+                                                </div>
+                                                <div class="right">
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_CommentReview_ThanksTo(this, '/blog/popup/wpaper_thanksto_V2.aspx?PaperId=12828574&amp;ItemId=296919110');"
+                                                            >Thanks to</a
+                                                        >
+                                                    </div>
+
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_paper_recommend('CommentReview', 'recom', 12828574);"
+                                                            >공감</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="temp_H20"></div>
+
+                            <div class="hundred_list">
+                                <div class="HL_star">
+                                    <img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;
+                                </div>
+                                <div class="HL_write">
+                                    <div class="blog_list3">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="javascript:void(0);"
+                                                    onclick="fn_ToggleCommentReviewPaper('12746610')"
+                                                >
+                                                </a>
+                                                <div
+                                                    class=""
+                                                    id="div_commentReviewPaper12746610"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        onclick="fn_ToggleCommentReviewPaper('12746610')"
+                                                    >
+                                                        <div
+                                                            id="spnPaperSpoiler12746610"
+                                                            style="
+                                                                display: none;
+                                                            "
+                                                        >
+                                                            이 글에는 스포일러가
+                                                            포함되어 있습니다.
+                                                            보시겠습니까?<br />
+                                                            회색 영역을 클릭하면
+                                                            내용을 확인할 수
+                                                            있습니다.
+                                                        </div>
+                                                    </a>
+                                                    <div
+                                                        id="spnPaper12746610"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_ToggleCommentReviewPaper('12746610')"
+                                                        >
+                                                            정독하며 줄치고 다시
+                                                            읽고 싶은 페이지
+                                                            접어 둔 책 싱크
+                                                            어게인.날마다 하는
+                                                            일이 무엇인지
+                                                            스스로에게 반문하며
+                                                            의사결정에 다시 한번
+                                                            의심을 품고 겸손하게
+                                                            상상하기를 깨닫개 해
+                                                            준 책. </a
+                                                        ><a
+                                                            href="javascript:void(0);"
+                                                            target="_blank"
+                                                            ><img
+                                                                src="./img/icon_ano_page.png"
+                                                                style="
+                                                                    margin-bottom: -3px;
+                                                                "
+                                                        /></a>
+                                                        <img
+                                                            src="./img/icon_label_buy.png"
+                                                            style="
+                                                                margin-bottom: -4px;
+                                                            "
+                                                            alt="구매"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="left">
+                                                    <a
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        href="#"
+                                                        >정영미</a
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >2021-07-05</span
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >공감 (1)</span
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="grey8 font_sz13"
+                                                        >댓글 (0)</a
+                                                    >
+                                                </div>
+                                                <div class="right">
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_CommentReview_ThanksTo(this, '/blog/popup/wpaper_thanksto_V2.aspx?PaperId=12746610&amp;ItemId=296919110');"
+                                                            >Thanks to</a
+                                                        >
+                                                    </div>
+
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_paper_recommend('CommentReview', 'recom', 12746610);"
+                                                            >공감</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="temp_H20"></div>
+
+                            <div class="hundred_list">
+                                <div class="HL_star">
+                                    <img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;
+                                </div>
+                                <div class="HL_write">
+                                    <div class="blog_list3">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="javascript:void(0);"
+                                                    onclick="fn_ToggleCommentReviewPaper('13462664')"
+                                                >
+                                                </a>
+                                                <div
+                                                    class=""
+                                                    id="div_commentReviewPaper13462664"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        onclick="fn_ToggleCommentReviewPaper('13462664')"
+                                                    >
+                                                        <div
+                                                            id="spnPaperSpoiler13462664"
+                                                            style="
+                                                                display: none;
+                                                            "
+                                                        >
+                                                            이 글에는 스포일러가
+                                                            포함되어 있습니다.
+                                                            보시겠습니까?<br />
+                                                            회색 영역을 클릭하면
+                                                            내용을 확인할 수
+                                                            있습니다.
+                                                        </div>
+                                                    </a>
+                                                    <div
+                                                        id="spnPaper13462664"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            onclick="fn_ToggleCommentReviewPaper('13462664')"
+                                                        >
+                                                            최상이라 생각했던
+                                                            직업, 경력, 인생의
+                                                            여러 계획을 다시
+                                                            살피고, 시간이
+                                                            흐르고 환경이
+                                                            바뀌면서 자신이
+                                                            원하는 것, 되고 싶은
+                                                            사람조차 달라질 수
+                                                            있으며, 내가 믿는
+                                                            것은 최종 완결체가
+                                                            아니라 하나의 과정일
+                                                            뿐이다.<br /> </a
+                                                        ><a
+                                                            href="javascript:void(0);"
+                                                            target="_blank"
+                                                            ><img
+                                                                src="./img/icon_ano_page.png"
+                                                                style="
+                                                                    margin-bottom: -3px;
+                                                                "
+                                                        /></a>
+                                                        <img
+                                                            src="./img/icon_label_buy.png"
+                                                            style="
+                                                                margin-bottom: -4px;
+                                                            "
+                                                            alt="구매"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="left">
+                                                    <a
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        href="javascript:void(0);"
+                                                        >장재호</a
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >2022-03-28</span
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >공감 (0)</span
+                                                    >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="grey8 font_sz13"
+                                                        >댓글 (0)</a
+                                                    >
+                                                </div>
+                                                <div class="right">
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            >Thanks to</a
+                                                        >
+                                                    </div>
+
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            >공감</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="temp_H20"></div>
+
+                            <div class="hundred_list">
+                                <div class="HL_star">
+                                    <img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;<img
+                                        src="./img/icon_star_on.png"
+                                        style="margin-bottom: -4px"
+                                    />&nbsp;
+                                </div>
+                                <div class="HL_write">
+                                    <div class="blog_list3">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="javascript:void(0);"
+                                                >
+                                                </a>
+                                                <div
+                                                    class=""
+                                                    id="div_commentReviewPaper12636851"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                    >
+                                                        <div
+                                                            id="spnPaperSpoiler12636851"
+                                                            style="
+                                                                display: none;
+                                                            "
+                                                        >
+                                                            이 글에는 스포일러가
+                                                            포함되어 있습니다.
+                                                            보시겠습니까?<br />
+                                                            회색 영역을 클릭하면
+                                                            내용을 확인할 수
+                                                            있습니다.
+                                                        </div>
+                                                    </a>
+                                                    <div
+                                                        id="spnPaper12636851"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                        >
+                                                            믿고 읽는 애덤
+                                                            그랜트의 책이죠.
+                                                            오리지널스와 같이
+                                                            생각을 하게 만드는
+                                                            책인 것 같습니다. </a
+                                                        ><a
+                                                            href="javascript:void(0);"
+                                                            target="_blank"
+                                                            ><img
+                                                                src="./img/icon_ano_page.png"
+                                                                style="
+                                                                    margin-bottom: -3px;
+                                                                "
+                                                        /></a>
+                                                        <img
+                                                            src="./img/icon_label_buy.png"
+                                                            style="
+                                                                margin-bottom: -4px;
+                                                            "
+                                                            alt="구매"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="left">
+                                                    <a
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        href="javascript:void(0);"
+                                                        >이윤경</a
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >2021-05-23</span
+                                                    >
+                                                    <span
+                                                        class="grey8 font_sz13 temp_PR10"
+                                                        >공감 (0)</span
+                                                    >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="grey8 font_sz13"
+                                                        >댓글 (0)</a
+                                                    >
+                                                </div>
+                                                <div class="right">
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            >Thanks to</a
+                                                        >
+                                                    </div>
+
+                                                    <div
+                                                        class="btn_blog_sym"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                            >공감</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="temp_H20"></div>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 푸터 시작 -->
