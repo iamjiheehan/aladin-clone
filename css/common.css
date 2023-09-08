@@ -251,9 +251,33 @@ ul, li {
     border: 1px solid #c8c8c8;
 }
 
-.btn_qna {
-
+.btn_blog_write {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    background: #0fa8ff;
+    border: 1px solid #0fa8ff;
 }
+
+.btn_blog_write a:link {
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 2px 18px 6px 19px;
+}
+
 .btn_blog_sym {
     display: inline-block;
     padding: 0;

@@ -1393,6 +1393,15 @@
     border-bottom: 1px solid #d5d5d5;
 }
 
+.Btitle_box .Tlist_right ul li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 25px;
+    color: #333;
+    font-size: 14px;
+}
+
 .Btitle_box .Tlist_left {
     float: left;
     margin: 0;
@@ -1453,4 +1462,12 @@
     padding: 0;
     text-align: left;
     width: 130px;
+}
+
+/* 마이리뷰 */
+
+.HL_write-content {
+    clear: both;
+    display: block;
+    width: 100%;
 }
