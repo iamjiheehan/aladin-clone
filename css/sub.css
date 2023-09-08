@@ -1353,3 +1353,33 @@
     width: 95px;
     padding: 23px 0px 22px 0px;
 }
+
+/* 100자평 카테고리 */
+
+.hundred_box .Hleft2 {
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+.hundred_box .myreview {
+    float: left;
+    margin: 0;
+    padding: 9px 10px;
+    width: 240px;
+    border: 1px solid #d5d5d5;
+    color: #222;
+}
+
+.hundred_box .Hright2 {
+    float: right;
+    margin: 0;
+    padding: 0px;
+}
+
+/* 카테고리 더보기 버튼 */
+.re_select-icon {
+    cursor: pointer;
+    float:right;
+    margin-top:5px;
+}
