@@ -5529,7 +5529,6 @@
                                                     >
                                                         <a
                                                             href="javascript:void(0);"
-                                                            onclick="fn_CommentReview_ThanksTo(this, '/blog/popup/wpaper_thanksto_V2.aspx?PaperId=12646108&amp;ItemId=296919110');"
                                                             >Thanks to</a
                                                         >
                                                     </div>
@@ -5539,7 +5538,6 @@
                                                     >
                                                         <a
                                                             href="javascript:void(0);"
-                                                            onclick="fn_paper_recommend('CommentReview', 'recom', 12646108);"
                                                             >공감</a
                                                         >
                                                     </div>
@@ -5577,7 +5575,6 @@
                                             <li>
                                                 <a
                                                     href="javascript:void(0);"
-                                                    onclick="fn_ToggleCommentReviewPaper('12828574')"
                                                 >
                                                 </a>
                                                 <div
@@ -5650,7 +5647,6 @@
                                                     >
                                                         <a
                                                             href="javascript:void(0);"
-                                                            onclick="fn_CommentReview_ThanksTo(this, '/blog/popup/wpaper_thanksto_V2.aspx?PaperId=12828574&amp;ItemId=296919110');"
                                                             >Thanks to</a
                                                         >
                                                     </div>
@@ -5660,7 +5656,6 @@
                                                     >
                                                         <a
                                                             href="javascript:void(0);"
-                                                            onclick="fn_paper_recommend('CommentReview', 'recom', 12828574);"
                                                             >공감</a
                                                         >
                                                     </div>
@@ -6103,7 +6098,6 @@
                     </div>
                     <div class="clear"></div>                    
                 </div>
-
                 <!-- 여백 -->
                 <div class="temp_H30"></div>
                 <!-- 마이리뷰 구매자 평 -->
@@ -6476,8 +6470,427 @@
                 <!-- 여백 -->
                 <div class="temp_H30"></div>
 
-                <div class="temp_H20"></div>
+
+
+                <!--마이페이퍼 리스트 타이틀-->
+                <div class="mid_BlogLL">마이페이퍼</div>
+                <div class="mid_BlogLS hidden">마이페이퍼</div>
+                <div class="Btitle_box" id="CommentReviewTab">
+                    <div class="Tlist_left">
+                        <ul>
+                            <li>
+                                <a id="tabOrderer" href="javascript:void(0);" class="on">
+                                    전체 (7)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="hidden" id="nOrderer" value="8">
+                    <div class="Tlist_right">
+                        <ul>
+                            <li>
+                                <div class="btn_blog_write">
+                                    <a href="javascript:void(0);">페이퍼 쓰기</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Tlist_right">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" class="font_blue">
+                                    <span id="CommentReviewSelectTitle">좋아요순</span>
+                                    <img src="./img/arrow_down_blue.png" style="margin-bottom: -2px">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div id="CommentReviewSelect" class="hidden" style="position: relative; display: none">
+                            <div class="layerst_list2" style="
+                                    position: absolute;
+                                    background-color: white;
+                                    left: -20px;
+                                ">
+                                <ul>
+                                    <li style="
+                                            width: 180px;
+                                            padding-left: 0;
+                                            font-size: 15px;
+                                        ">
+                                        <a style="padding: 8px 18px" href="javascript:void(0);">좋아요순
+                                        </a>
+                                    </li>
+                                    <li style="
+                                            width: 180px;
+                                            padding-left: 0;
+                                            font-size: 15px;
+                                        ">
+                                        <a style="padding: 8px 18px" href="javascript:void(0);">등록순</a>
+                                    </li>
+                                    <li style="
+                                            width: 180px;
+                                            padding-left: 0;
+                                            font-size: 15px;
+                                        ">
+                                        <a style="padding: 8px 18px" href="javascript:void(0);">인기순</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>                    
+                </div>
+                <!-- 여백 -->
+                <div class="temp_H30"></div>
+                <!-- 마이페이퍼 구매자 평 -->
+                <div id="CommentReviewList">
+                    <div class="review_list_wrap">
+                        <ul>
+                            <div class="hundred_list">
+                                <div class="HL_write">
+                                    <div class="blog_list3">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="javascript:void(0);"
+                                                >
+                                                </a>
+                                                <div
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                    >
+                                                    </a>
+                                                    <div class="font_str"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                        >
+                                                            싱크어게인 - 과학자처럼생각하기 </a
+                                                        ><a
+                                                            href="javascript:void(0);"
+                                                            target="_blank"
+                                                            ><img
+                                                                src="./img/icon_ano_page.png"
+                                                                style="
+                                                                    margin-bottom: -3px;
+                                                                "
+                                                        /></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear temp_H10"></div>
+                                <div class="HL_write-content">
+                                    <ul>
+                                        <li>
+                                            <a
+                                            href="javascript:void(0);"
+                                        >
+                                            싱크어게인, 안다는
+                                            생각에 머물지 않고
+                                            끊임없이 다시
+                                            생각해보는 것을
+                                            의미한다. 과거
+                                            어느때보다 급변하는
+                                            시대를 살고 있는
+                                            요즈음 더욱 중요하게
+                                            느껴지는 말이다.
+                                            오리지널스보다 더욱
+                                            원숙해진 애덤
+                                            그랜트의 글솜씨가
+                                            독자를 즐겁게
+                                            해준다. 후반부에
+                                            책의 핵심만
+                                            요약해주는 센스도
+                                            여전하다. </a
+                                        >
+                                        </li>
+                                        <div class="clear temp_H10"></div>
+                                        <li>
+                                            <div class="left">
+                                                <a
+                                                    class="grey8 font_sz13 temp_PR10"
+                                                    href="#"
+                                                    >Kletos</a
+                                                >
+                                                <span
+                                                    class="grey8 font_sz13 temp_PR10"
+                                                    >2021-05-26</span
+                                                >
+                                                <span
+                                                    class="grey8 font_sz13 temp_PR10"
+                                                    >공감 (11)</span
+                                                >
+                                                <a
+                                                    href="#"
+                                                    class="grey8 font_sz13"
+                                                    >댓글 (0)</a
+                                                >
+                                            </div>
+                                            <div class="right">
+                                                <div
+                                                    class="btn_blog_sym"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        >Thanks to</a
+                                                    >
+                                                </div>
+
+                                                <div
+                                                    class="btn_blog_sym"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        >공감</a
+                                                    >
+                                                </div>
+
+                                                <div
+                                                    class="btn_blog_sym"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        >찜하기</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear temp_H30"></div>
+
+                            <div class="hundred_list">
+                                <div class="HL_write">
+                                    <div class="blog_list3">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="javascript:void(0);"
+                                                >
+                                                </a>
+                                                <div
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                    >
+                                                    </a>
+                                                    <div class="font_str"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                        >
+                                                            이렇게 방대할 필요가 없는이야기  </a
+                                                        ><a
+                                                            href="javascript:void(0);"
+                                                            target="_blank"
+                                                            ><img
+                                                                src="./img/icon_ano_page.png"
+                                                                style="
+                                                                    margin-bottom: -3px;
+                                                                "
+                                                        /></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear temp_H10"></div>
+                                <div class="HL_write-content">
+                                    <ul>
+                                        <li>
+                                            <a
+                                            href="javascript:void(0);"
+                                        >
+                                        이렇게방대할 필요가 없거나번역이 넘 힘들게되어서 잘 안 읽히거나 둘중에 하나이더라도 좀 더 체계적인 정리가필요해 보이는책이다. </a
+                                        >
+                                        </li>
+                                        <div class="clear temp_H10"></div>
+                                        <li>
+                                            <div class="left">
+                                                <a
+                                                    class="grey8 font_sz13 temp_PR10"
+                                                    href="#"
+                                                    >핑크팬더</a
+                                                >
+                                                <span
+                                                    class="grey8 font_sz13 temp_PR10"
+                                                    >2021-07-13</span
+                                                >
+                                                <span
+                                                    class="grey8 font_sz13 temp_PR10"
+                                                    >공감 (11)</span
+                                                >
+                                                <a
+                                                    href="#"
+                                                    class="grey8 font_sz13"
+                                                    >댓글 (0)</a
+                                                >
+                                            </div>
+                                            <div class="right">
+                                                <div
+                                                    class="btn_blog_sym"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        >Thanks to</a
+                                                    >
+                                                </div>
+
+                                                <div
+                                                    class="btn_blog_sym"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        >공감</a
+                                                    >
+                                                </div>
+
+                                                <div
+                                                    class="btn_blog_sym"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        >찜하기</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear temp_H30"></div>
+
+                            <div class="hundred_list">
+                                <div class="HL_write">
+                                    <div class="blog_list3">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="javascript:void(0);"
+                                                >
+                                                </a>
+                                                <div
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                    >
+                                                    </a>
+                                                    <div class="font_str"
+                                                    >
+                                                        <a
+                                                            href="javascript:void(0);"
+                                                        >
+                                                        성공 마인드셋  </a
+                                                        ><a
+                                                            href="javascript:void(0);"
+                                                            target="_blank"
+                                                            ><img
+                                                                src="./img/icon_ano_page.png"
+                                                                style="
+                                                                    margin-bottom: -3px;
+                                                                "
+                                                        /></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear temp_H10"></div>
+                                <div class="HL_write-content">
+                                    <ul>
+                                        <li>
+                                            <a
+                                            href="javascript:void(0);"
+                                            >
+                                            "세상은 자신의 모든 것을 걸고 미친 듯이 도전하고 노력하는 사람에게만 보상을 해준다." - 켈리최 추천사 중 사람들은 집착이란 단어를 부정적으로 생각한다. 그리고 집착하는 태도를 바람직 못하다고 생각할 뿐만 아니라 집착을 예방하고, 집착에서 ...  </a
+                                            >
+                                            <a href="javascript:void(0);" class="grey8 font_sz13" style="
+                                                font-family: malgun,
+                                                    'Malgun Gothic', Dotum, 돋움,
+                                                    sans-serif;
+                                            "> + 더보기</a>
+                                        </li>
+                                        <div class="clear temp_H10"></div>
+                                        <li>
+                                            <div class="left">
+                                                <a
+                                                    class="grey8 font_sz13 temp_PR10"
+                                                    href="#"
+                                                    >ahra8725</a
+                                                >
+                                                <span
+                                                    class="grey8 font_sz13 temp_PR10"
+                                                    >2023-08-24</span
+                                                >
+                                                <span
+                                                    class="grey8 font_sz13 temp_PR10"
+                                                    >공감 (11)</span
+                                                >
+                                                <a
+                                                    href="#"
+                                                    class="grey8 font_sz13"
+                                                    >댓글 (0)</a
+                                                >
+                                            </div>
+                                            <div class="right">
+                                                <div
+                                                    class="btn_blog_sym"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        >Thanks to</a
+                                                    >
+                                                </div>
+
+                                                <div
+                                                    class="btn_blog_sym"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        >공감</a
+                                                    >
+                                                </div>
+
+                                                <div
+                                                    class="btn_blog_sym"
+                                                >
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        >찜하기</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear temp_H30"></div>
+                        </ul>
+                    </div>
+                    <div id="Underline3_more" class="btn_more" style="margin-top: 30px">
+                        <a href="#"><strong>더보기</strong>
+                            <div class="more_arrow"></div></a>
+                    </div>
+                    <div class="temp_H40"></div>
+                </div>
             </div>
+            <div class="clear"></div>
+        </div>
+        <div class="temp_line3"></div>
+        <div class="sub_wrap">
+            <div></div>
         </div>
         <!-- 푸터 시작 -->
         <footer>
