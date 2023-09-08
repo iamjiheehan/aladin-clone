@@ -1494,3 +1494,38 @@
 .last_more {
     float:right;
 }
+
+.last_Tbox {
+    display: block;
+}
+
+#last_bookwrap .cover {
+    width: 150px;
+    height: 240px;
+    margin: 0 auto 5px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#last_bookwrap .cover img {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+#last_bookwrap .title {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    word-break: break-all;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    width: 150px;
+}
+
+#last_bookwrap .swiper_section {
+    height: 321px;
+    overflow: hidden;
+}
