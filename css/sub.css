@@ -1,3 +1,26 @@
+/*--------------------------우측 상단 floating 배너----------------- */
+.goodsbn_wrap {
+    position: absolute;
+    right: -100px;
+    top: 0px;
+}
+
+.goodsbn_box {
+    float: left;
+    position: fixed;
+    right: auto;
+    margin-left: auto;
+    top: 75%;
+}
+
+.goodsbn_close{
+    position: absolute;
+    top: -20%;
+    right: -10%;
+
+}
+
+
 /* -----------------------------첫번째 탭----------------------------- */
 
 .sub_wrap {
