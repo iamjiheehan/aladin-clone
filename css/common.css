@@ -257,6 +257,14 @@ ul, li {
     border: 1px solid #c8c8c8;
 }
 
+
+.btn_check a:hover {
+    margin: 0;
+    text-decoration: none;
+    background: #fafafa;
+}
+
+
 .btn_blog_write {
     display: inline-block;
     padding: 0;

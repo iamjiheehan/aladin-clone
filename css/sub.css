@@ -1472,3 +1472,25 @@
     display: block;
     width: 100%;
 }
+
+/* 마지막 섹션 */
+
+.last_wrap{
+    padding: 35px 0 0 0;
+}
+
+.last_title {
+    float: left;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    color: #111;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 0 0 40px 0;
+    padding: 0 50px 0 0;
+}
+
+.last_more {
+    float:right;
+}
