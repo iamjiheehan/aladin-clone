@@ -1,4 +1,3 @@
-
 // ----------------------------------------------서브페이지 마지막 섹션 API 호출 및 Slick 적용 
 
 $(document).ready(function() {
@@ -82,3 +81,49 @@ $(document).ready(function() {
         });
     });
 });
+
+//------------------오늘 본 상품----------------------------
+
+$(function() {
+    var bookTitles = [
+        "퓨처 셀프",
+        "세이노의 가르침",
+        "슈퍼노멀",
+        "역행자",
+        "집착의 법칙",
+        "모든 멋진 일에는 두려움이 따른다",
+        "혼자 있는 새벽 4시의 힘",
+        "파리의 심리학 카페",
+        "멘탈을 회복하는 연습",
+    ];
+
+    var $recentList = $('#recentList');
+
+    bookTitles.forEach(function (title) {
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=title",
+            data: $.param({ query: title, size: 1 }), 
+            headers: { Authorization: "KakaoAK 6d7be6265b1495468abf689fe747c801" }
+        })
+        .done(function (msg) {
+            if (msg.documents.length > 0) {
+                var book = msg.documents[0]; 
+                
+                var $closeBtn = $("<div class='fix_del' style='display: none'><a href='javascript:void(0);' class='RecentDelete'><img src='./img/btn_del.png' alt='' border='0' /></a></div>");
+                var $Wrapper = $("<li></li>");
+                var $Item = $("<div class='recentList_item'></div>");
+
+                console.log('====================================');
+                console.log(title,"hello");
+                console.log('====================================');
+                $Item.append("<a href='javascript:void(0);'><img border='0' class='fiximg1' src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
+                
+                $Wrapper.append($closeBtn);
+                $Wrapper.append($Item);
+                $recentList.append($Wrapper);
+            }
+        });
+    });
+});
+
