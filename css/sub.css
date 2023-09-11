@@ -1,27 +1,82 @@
 /*--------------------------상단 고정 레이어----------------- */
 .fixed_top-wrap {
-    position: fixed;
     left: 0;
     top: 0;
-    z-index: 0;
+    z-index: 9999;
     /* visibility: hidden; */
-    transition: visibility 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
-    opacity: 0;
-    transform: translate(0,-150px);
+    /* transition: visibility 0.5s ease, opacity 0.5s ease, transform 0.5s ease; */
+    /* opacity: 0; */
+    /* transform: translate(0,-150px); */
+    position: fixed;
 
+
+    box-shadow: 0 2px 2px #ccc;
     background: rgba(248, 248, 248, 0.95);
     padding: 10px 0;
-    margin: 0;
     width: 100%;
-    box-shadow: 0 2px 2px #ccc;
+    text-align: left;
+    overflow: hidden;
+}
+
+.fixed_top-wrap .btnbox {
+    float: right;
+    width: 24%;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.fixed_top-box {
+    width: 1060px;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+.fixed_top-box .title ul li {
+    list-style: none;
+    font-size: 15px;
+    color: #333;
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+}
+
+.btn_sm_buyitnow {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    background: #df307f;
+}
+
+.btn_sm_cart a:hover {
+    margin: 0;
+    background: #c82370;
 }
 
 
+.btn_sm_buyitnow a:hover{
+    background: #cd394d;
+}
 
-
-
-
-
+.btn_sm_buyitnow a {
+    white-space: nowrap;
+    text-decoration: none;
+    outline: 0;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: malgun, "Malgun Gothic", Dotum, 돋움, sans-serif;
+    line-height: 1.5;
+    display: block;
+    white-space: nowrap;
+    background: #e24457;
+    margin: 0;
+    padding: 4px 20px 5px 19px;
+    letter-spacing: -0.07em;
+}
 
 
 
