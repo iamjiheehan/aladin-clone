@@ -114,9 +114,6 @@ $(function() {
                 var $Wrapper = $("<li></li>");
                 var $Item = $("<div class='recentList_item'></div>");
 
-                console.log('====================================');
-                console.log(title,"hello");
-                console.log('====================================');
                 $Item.append("<a href='javascript:void(0);'><img border='0' class='fiximg1' src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
                 
                 $Wrapper.append($closeBtn);
