@@ -1,3 +1,32 @@
+/*--------------------------상단 고정 레이어----------------- */
+.fixed_top-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    /* visibility: hidden; */
+    transition: visibility 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translate(0,-150px);
+
+    background: rgba(248, 248, 248, 0.95);
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------우측 상단 floating 배너----------------- */
 .goodsbn_wrap {
     position: absolute;
