@@ -393,6 +393,9 @@
     -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
     -moz-transition: -moz-transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
     transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+    perspective-origin: top center;
+    perspective: top center;
 }
 
 #divFlipImg section .imgbox {
@@ -419,7 +422,7 @@
 #divFlipImg section .book:before {
     content: "";
     position: absolute;
-    width: 58px;
+    width: 90px;
     height: 100%;
     /* transform-origin: left top; */
     transform-origin: left top;
@@ -441,7 +444,7 @@
     transform-origin: 0% 50% 50%;
     background: url("../img/sub_book-back.jpg");
     background-position: center;
-    transform: rotateY(180deg) translateZ(58px);
+    transform: rotateY(180deg) translateZ(90px);
     background-size: cover;
 }
 
