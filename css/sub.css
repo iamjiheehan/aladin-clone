@@ -210,7 +210,7 @@
 
 
 .Bcoverwrap #divFlipImg {
-    opacity: 1
+    opacity: 1;
 }
 
 .Bcoverwrap .cover .swiper_section {
@@ -223,10 +223,6 @@
     transition: 0.5s;
 }
 
-/* .Bcoverwrap .cover .swiper_section .swiper_wrapper .swiper_item .imgbox{
-    border: 1px solid #ccc;
-    padding: 1rem;
-} */
 
 .Bcoverwrap .cover {
     position: relative;
@@ -285,6 +281,7 @@
     height: 100%;
     top: 0;
     left: 0;
+
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opactiy 1s ease-in-out;
     -ms-transition: opacity 1s ease-in-out;
@@ -373,10 +370,6 @@
 
 /*--- 도서 회전 속성 ---*/
 
-#divFlipImg .book .imgbox {
-    /* border: 1px solid #ddd; */
-}
-
 #divFlipImg .book li {
     -webkit-perspective: 1800px;
     -moz-perspective: 1800px;
@@ -390,7 +383,6 @@
 #divFlipImg section {
     width: 100%;
     height: 100%;
-    /* margin: 100px auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -429,7 +421,8 @@
     position: absolute;
     width: 58px;
     height: 100%;
-    transform-origin: left;
+    /* transform-origin: left top; */
+    transform-origin: left top;
     background: url("../img/sub_book-left.jpg");
     background-position: center;
     transform: rotateY(90deg);
@@ -444,7 +437,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    transform-origin: center;
+    /* transform-origin: top center; */
+    transform-origin: 0% 50% 50%;
     background: url("../img/sub_book-back.jpg");
     background-position: center;
     transform: rotateY(180deg) translateZ(58px);
