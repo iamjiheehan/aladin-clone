@@ -386,7 +386,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1000px;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -396,6 +395,7 @@
 
     perspective-origin: top center;
     perspective: top center;
+    perspective: 1800px;
 }
 
 #divFlipImg section .imgbox {
