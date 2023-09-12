@@ -2809,19 +2809,23 @@
         <!-- 원서 번역서 섹션  -->
         <div class="sub_wrap">
             <div class="mid_R">
-                <div id="divForeignBookTitle">
+                <div id="foreignBookTitle">
                     <div class="mid_LL hidden">시리즈</div>
                 </div>
                 <div>
-                    <div style="z-index: 99">
+                    <div style="z-index: 99" 
+                    >
                         <div class="floatL font_sz16">
                             <strong>이 책의 원서/번역서</strong><br />
-                            <div id="foreignFixBookBasketResult">
+                            <div id="foreignBookResult"
+                                class="hidden"
+                            >
                                 총
                                 <span class="font_pink font_str">1권</span>
                                 선택, 구매가
                                 <span class="font_pink font_str">16,310</span>원
                             </div>
+                            <div class="temp_H20"></div>
                         </div>
                         <div class="floatR">
                             <div class="btn_check">
@@ -2845,10 +2849,17 @@
                         <ul>
                             <li>
                                 <a class="check"
-                                    ><img
-                                        id="cbForeignBookImg0"
+                                    >
+                                    <img
+                                        id="check_emtpy"
                                         src="./img/icon_check_off.png"
                                         style="margin-bottom: -5px"
+                                />
+                                    <img
+                                    id="check_active"
+                                    class="hidden"
+                                    src="./img/icon_check_on.png"
+                                    style="margin-bottom: -5px"
                                 /></a>
                                 <a href="#">
                                     Think Again (Paperback) Paperback</a
