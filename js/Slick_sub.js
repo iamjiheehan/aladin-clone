@@ -15,7 +15,7 @@ $(function () {
     var item = $(".Bcoverwrap .cover .swiper_section .swiper_wrapper .swiper_item");
     var max = item.length;
 
-    $(".Bcoverwrap .cover .arr2_right").on("click", function () {
+    $(".Bcoverwrap .cover .arr2_right span").on("click", function () {
         if ($index < max - 1) { 
             $index++;
             console.log("클릭후 인덱스 값은", $index);
@@ -33,7 +33,7 @@ $(function () {
         }
     });
 
-    $(".Bcoverwrap .cover .arr2_left").on("click", function () {
+    $(".Bcoverwrap .cover .arr2_left span").on("click", function () {
         if ($index > 0) {
             $index--;
             console.log("클릭후 인덱스 값은", $index);

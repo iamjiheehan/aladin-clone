@@ -285,7 +285,6 @@
     height: 100%;
     top: 0;
     left: 0;
-    cursor: pointer;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opactiy 1s ease-in-out;
     -ms-transition: opacity 1s ease-in-out;
@@ -314,7 +313,6 @@
     height: 100%;
     top: 0;
     left: 75%;
-    cursor: pointer;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opactiy 1s ease-in-out;
     -ms-transition: opacity 1s ease-in-out;
@@ -327,6 +325,13 @@
         15px auto;
     right: 5px;
 }
+.arr2_right.new span:hover 
+, .Bcoverwrap .arr2_left span:hover
+{
+    cursor: pointer;
+
+}
+
 
 .Bcoverwrap .arr2_right a {
     top: 45%;
