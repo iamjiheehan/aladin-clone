@@ -216,17 +216,17 @@
 .Bcoverwrap .cover .swiper_section {
     position: absolute;
     top: 0;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .Bcoverwrap .cover .swiper_section .swiper_wrapper {
     transition: 0.5s;
 }
 
-.Bcoverwrap .cover .swiper_section .swiper_wrapper .swiper_item .imgbox{
+/* .Bcoverwrap .cover .swiper_section .swiper_wrapper .swiper_item .imgbox{
     border: 1px solid #ccc;
     padding: 1rem;
-}
+} */
 
 .Bcoverwrap .cover {
     position: relative;
@@ -236,7 +236,7 @@
     width: 502px;
     height: 742px;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .Bcoverwrap .cover img {

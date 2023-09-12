@@ -19,8 +19,9 @@ $(function () {
         if ($index < max - 1) { 
             $index++;
             console.log("클릭후 인덱스 값은", $index);
-            $(".Bcoverwrap .cover #divFlipImg").css("opacity", "0");
-            $(".Bcoverwrap .cover .swiper_section").css("opacity", "1");
+            $(".Bcoverwrap .cover .swiper_section").removeClass("hidden");
+            $(".Bcoverwrap .cover").css("overflow", "hidden");
+            $("#divFlipImg").addClass("hidden");
             var translateXValue = $index * -502 + "px";
             $(".Bcoverwrap .cover .swiper_section .swiper_wrapper").css("transform", "translateX(" + translateXValue + ")");
         }
@@ -39,6 +40,10 @@ $(function () {
             console.log("클릭후 인덱스 값은", $index);
             var translateXValue = $index * -502 + "px";
             $(".Bcoverwrap .cover .swiper_section .swiper_wrapper").css("transform", "translateX(" + translateXValue + ")");
+        } else if ($index == max - 1) {
+            $(".Bcoverwrap .cover .swiper_section").addClassClass("hidden");
+            $(".Bcoverwrap .cover").css("overflow", "visible");
+            $("#divFlipImg").removeClassClass("hidden");
         }
     });
 });

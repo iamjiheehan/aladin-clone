@@ -152,6 +152,10 @@ ul, li {
     border-top: 1px solid #ccc;
 }
 
+.temp_Bline1 {
+    border: 1px solid #ccc;
+}
+
 .temp_line2 {
     margin: 45px 0 40px 0;
     padding: 0;
