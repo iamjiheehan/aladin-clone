@@ -15,4 +15,9 @@ $(function () {
         $("#check_active").toggleClass("hidden");    
         $("#check_emtpy").toggleClass("hidden");    
     });
+    $("#check_active").on("click",function () {
+        $("#foreignBookResult").toggleClass("hidden");
+        $("#check_active").toggleClass("hidden");    
+        $("#check_emtpy").toggleClass("hidden");    
+    });
 });
