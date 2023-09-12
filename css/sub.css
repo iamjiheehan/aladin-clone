@@ -207,6 +207,17 @@
     float: left;
     width: 502px;
 }
+.Bcoverwrap #divFlipImg {
+    opacity: 1
+}
+
+
+.Bcoverwrap .cover .swiper_section {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    
+}
 
 .Bcoverwrap .cover {
     position: relative;
@@ -216,16 +227,13 @@
     width: 502px;
     height: 742px;
     text-align: center;
+    overflow: hidden;
 }
 
 .Bcoverwrap .cover img {
     max-width: 502px;
 }
 
-.Bcoverwrap .cover .swiper_section {
-    position: absolute;
-    top: 0;
-}
 
 /* 회전 도서 호버 왼쪽 화살표 */
 .Bcoverwrap .arr2_left {
