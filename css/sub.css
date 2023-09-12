@@ -214,11 +214,17 @@
     padding: 0;
     float: left;
     width: 502px;
+    height: 742px;
     text-align: center;
 }
 
 .Bcoverwrap .cover img {
     max-width: 502px;
+}
+
+.Bcoverwrap .cover .swiper_section {
+    position: absolute;
+    top: 0;
 }
 
 /* 회전 도서 호버 왼쪽 화살표 */

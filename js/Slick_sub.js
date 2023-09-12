@@ -7,3 +7,4 @@ $(function () {
         dotsClass: 'dots_custom'
     });
 });
+
