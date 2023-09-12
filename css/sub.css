@@ -314,7 +314,7 @@
 /*--- 도서 회전 속성 ---*/
 
 #divFlipImg .book .imgbox {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
 }
 
 #divFlipImg .book li {
@@ -379,6 +379,7 @@
 /* 도서 뒷면 */
 
 #divFlipImg section .book:after {
+    overflow: hidden;
     content: "";
     position: absolute;
     width: 100%;

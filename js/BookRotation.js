@@ -14,7 +14,7 @@ $(function () {
     $(".book").hover(
         function () {
             if (!isRotated) {
-                $(this).css("transform", "rotateY(35deg)");
+                $(this).css("transform", "rotateY(35deg)").css("transform-origin","top center");
                 $("#divFlipImg .coverItem").show();
             }
         },
