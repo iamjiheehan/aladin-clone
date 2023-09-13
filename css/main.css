@@ -161,6 +161,8 @@
     text-align: center;
     cursor: pointer;
     overflow: hidden;
+
+    margin-right: 0 !important;
 }
 
 /* --------웰컴상단 끝 /// welcome secition1 편집장의 선택 css 시작------- */
