@@ -1139,6 +1139,8 @@ ul, li {
     height: 100%;
     position: relative;
     transition-property: transform;
+
+    margin-right: 30px;
 }
 
 

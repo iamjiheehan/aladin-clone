@@ -954,7 +954,8 @@
 }
 
 .w_booklist .cover {
-    width: 180px;
+    /* width: 180px; */
+    width: 100%;
     position: relative;
     margin-bottom: 8px;
     padding: 5px;
@@ -1114,9 +1115,6 @@
 }
 
 /* -------------------------알라디너의 선택------------------------ */
-.w_booklist .cover {
-    width: 180px;
-}
 
 .w_booklist .cover img {
     width: 100%;
