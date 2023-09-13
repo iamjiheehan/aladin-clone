@@ -843,9 +843,10 @@
     box-sizing: border-box;
     display: flex;
     align-items: flex-start;
+    flex-shrink: 0;
+
     margin-right: 5px;
     margin-left: 5px;
-    flex-shrink: 0;
 }
 
 
@@ -1115,7 +1116,6 @@
 /* -------------------------알라디너의 선택------------------------ */
 .w_booklist .cover {
     width: 180px;
-    margin-left: 30px !important;
 }
 
 .w_booklist .cover img {
