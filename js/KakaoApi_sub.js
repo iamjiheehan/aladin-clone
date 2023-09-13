@@ -1,6 +1,6 @@
 // ----------------------------------------------관련 구매상품 섹션 API 호출 및 Slick 적용 
 
-$(document).ready(function() {
+$(function () {
 
     $(function () {
         var bookTitles = [
