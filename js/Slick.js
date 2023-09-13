@@ -249,22 +249,22 @@ $(function () {
 
 // --------------------------알라딘 스페셜 슬라이더
 
-$(function () {
-    $("#w_aladinSpecial_type .w_booklist .swiper_wrapper").slick({
-        slidesToShow: 5,
-        slidesToScroll: 5,
-    });
+// $(function () {
+//     $("#w_aladinSpecial_type .w_booklist .swiper_wrapper").slick({
+//         slidesToShow: 5,
+//         slidesToScroll: 5,
+//     });
 
-    $("#w_aladinSpecial_type .white_circle_prev").on('click',function(e) {
-        // e.preventDefault();
-        $("#w_aladinSpecial_type .w_booklist .swiper_wrapper").slick("slickPrev");
-    });
+//     $("#w_aladinSpecial_type .white_circle_prev").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#w_aladinSpecial_type .w_booklist .swiper_wrapper").slick("slickPrev");
+//     });
 
-    $("#w_aladinSpecial_type .white_circle_next").on('click',function(e) {
-        // e.preventDefault();
-        $("#w_aladinSpecial_type .w_booklist .swiper_wrapper").slick("slickNext");
-    });
-});
+//     $("#w_aladinSpecial_type .white_circle_next").on('click',function(e) {
+//         // e.preventDefault();
+//         $("#w_aladinSpecial_type .w_booklist .swiper_wrapper").slick("slickNext");
+//     });
+// });
 
 // -------------------------중간 광고 배너 슬라이더 
 

@@ -1134,6 +1134,8 @@ ul, li {
     display: flex;
     transition-property: transform;
     box-sizing: content-box;
+
+    overflow: hidden;
 }
 
 

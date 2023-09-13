@@ -73,7 +73,7 @@ $(function () {
 
 $(function () {
     var bookTitles = [
-        "오펜하이머 각본집",
+        "이것은 라울 뒤피에 관한 이야기",
         "탱크",
         "아메리칸 프로메테우스",
         "ADHD 우울증 치매 이렇게 고쳐라",
@@ -124,6 +124,67 @@ $(function () {
                 $("#w_monthBook_type .white_circle_next").on('click',function(e) {
                     // e.preventDefault();
                     $("#w_monthBook .swiper_wrapper").slick("slickNext");
+                });
+            });
+        });
+    });
+});
+
+// ----------------------------------------------알라딘 스페셜 API 호출 및 Slick 적용 
+
+$(function () {
+    var bookTitles = [
+        "공정하다는 착각",
+        "일곱 개의 단어로 된 사전",
+        "혼자를 기르는 법",
+        "조지 우웰 소설 전집 세트",
+        "너의 췌장을 먹고 싶어",
+        "우리는 매일매일",
+        "갈매기에게 나는 법을 가르쳐준 고양이",
+        "1차원이 되고 싶어",
+        "안녕 주정뱅이"
+    ];
+
+    var $swiperWrapper = $('#w_aladinSpecial_type .swiper_wrapper');
+
+    bookTitles.forEach(function (title) {
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=title",
+            data: $.param({ query: title, size: 1 }), 
+            headers: { Authorization: "KakaoAK 6d7be6265b1495468abf689fe747c801" }
+        })
+        .done(function (msg) {
+            if (msg.documents.length > 0) {
+                var book = msg.documents[0]; 
+                var $swiperItem = $("<div class='swiper_item'></div>");
+                var $cover = $("<div class='cover'></div>");
+
+                $cover.append("<a href='#'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
+
+                $swiperItem.append($cover);
+
+                var $text = $("<div class='text'></div>");
+                var $title = $("<div class='title'></div>");
+                $title.append("<a href='#'>" + book.title + "</a>");
+                $text.append($title);
+                $swiperItem.append($text);
+                $swiperWrapper.append($swiperItem);
+            }
+
+            $(function () {
+                $("#w_aladinSpecial_type .swiper_wrapper").slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                });
+                $("#w_aladinSpecial_type .white_circle_prev").on('click',function(e) {
+                    // e.preventDefault();
+                    $("#w_aladinSpecial_type .swiper_wrapper").slick("slickPrev");
+                });
+            
+                $("#w_aladinSpecial_type .white_circle_next").on('click',function(e) {
+                    // e.preventDefault();
+                    $("#w_aladinSpecial_type .swiper_wrapper").slick("slickNext");
                 });
             });
         });
