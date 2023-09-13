@@ -152,6 +152,8 @@
     color: #fff;
 }
 /* 탭활성화 active 속성-------------------------- // */
+
+.aladinerTV_box .swiper_item,
 .welcome_top_content .swiper_item,
 .welcome_top_tab .swiper_item {
     line-height: 33px;
