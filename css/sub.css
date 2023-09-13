@@ -1644,6 +1644,10 @@
     display: block;
 }
 
+#last_bookwrap {
+    position: relative;
+}
+
 #last_bookwrap .cover {
     width: 150px;
     height: 240px;
