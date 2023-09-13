@@ -1,6 +1,6 @@
 $(function () {
     var isRotated = false;
-    $(".book").click(function () {
+    $(".book").on("click",function () {
         if (isRotated) {
             $(this).css("transform", "rotateY(35deg)");
             isRotated = false;
@@ -12,7 +12,7 @@ $(function () {
         }
     });
 
-    $(".book").hover(
+    $(".book").on("hover",
         function () {
             if (!isRotated) {
                 $(this).css("transform", "rotateY(35deg)");

@@ -8,7 +8,7 @@ $(function () {
     });
 });
 
-// book flip
+// 서브페이지 슬라이더
 
 $(function () {
     var $index = 0; 

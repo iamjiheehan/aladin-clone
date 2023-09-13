@@ -8,7 +8,7 @@
 //         }
 //     });
 // });
-
+//위도 아래와 같은 기능을 구현하는 함수
 
 $(function () {
     $(document).scroll(function() {
