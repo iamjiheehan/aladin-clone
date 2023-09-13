@@ -2,7 +2,7 @@
 // ------------------------------------------------슬라이더 화살표
 
 $(function (){
-    $(".white_circle_next").click(function (){
+    $(".white_circle_next").on("click",function (){
         $(this).siblings(".white_circle_prev").show();
     });
 });
