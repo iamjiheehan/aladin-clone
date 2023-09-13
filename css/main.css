@@ -167,9 +167,10 @@
 
 .welcome_section1 {
     width: 1030px;
-    min-height: 390px;
+    height: 390px;
     margin: 0 auto 50px auto;
     display: flex;
+    overflow: hidden;
 }
 
 .welcome_section1 .editor_choice {
@@ -776,6 +777,11 @@
     position: relative;
     margin-bottom: 8px;
     padding: 5px;
+}
+
+#jinnyWelcome {
+    overflow: hidden;
+    height: 370px;
 }
 
 #jinnyWelcome_Back .swiper_wrapper {

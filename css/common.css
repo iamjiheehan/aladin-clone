@@ -45,6 +45,9 @@ ul, li {
     opacity: 0;
 }
 
+.overflow {
+    overflow: hidden;
+}
 
 .clear {
     clear: both;
