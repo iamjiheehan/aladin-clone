@@ -1680,6 +1680,14 @@
 .fiximg1 {
     width: 50px;
     height: 65px;
+    position: relative;
+}
+
+.fix_del {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    padding: 0.2rem;
 }
 
 .today_click_r {

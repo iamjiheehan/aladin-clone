@@ -2302,7 +2302,8 @@
                                                 y="0px"
                                                 viewBox="0 0 60 60"
                                             >
-                                                <defs>
+                                                <defs
+                                                >
                                                     <mask id="clock_mask">
                                                         <g>
                                                             <path
@@ -2380,52 +2381,6 @@
                                                 </g>
                                             </svg></div
                                     ></a>
-                                    <script type="text/javascript">
-                                        var clockhands = new TimelineMax({
-                                            repeat: -1,
-                                        });
-                                        clockhands
-                                            .to(".c_hour", 1, {
-                                                opacity: 1,
-                                                rotation: 180,
-                                                transformOrigin: "right",
-                                            })
-                                            .fromTo(
-                                                ".c_hour",
-                                                2.5,
-                                                {
-                                                    opacity: 1,
-                                                    rotation: 180,
-                                                    transformOrigin: "right",
-                                                },
-                                                {
-                                                    rotation: 415,
-                                                    transformOrigin: "right",
-                                                    ease: Power3.easeOut,
-                                                }
-                                            )
-                                            .to(".c_hour", 0.4, {
-                                                opacity: 0,
-                                                delay: 2,
-                                            });
-                                        var clockline = new TimelineMax({
-                                            repeat: -1,
-                                        });
-                                        clockline
-                                            .to(".c_ani2", 1, {
-                                                strokeDashoffset: "150",
-                                            })
-                                            .to(".c_ani2", 2.5, {
-                                                strokeDashoffset: "-=150",
-                                                strokeWidth: 10,
-                                                strokeMiterlimit: 10,
-                                                stroke: "#ffaf25",
-                                            })
-                                            .to(".c_ani2", 0.4, {
-                                                opacity: 0,
-                                                delay: 2,
-                                            });
-                                    </script>
                                 </div>
                                 <div class="Ritem ytz_space">
                                     <a href="#"
@@ -6952,7 +6907,7 @@
         <!-- 마지막 섹션 -->
         <div class="sub_wrap last_wrap">
             <!-- 관련 도서 구입 -->
-            <div class="last_wrap-click">
+            <div class="last_wrap-buy">
                 <div class="last_Tbox">
                     <div class="last_title">
                         이 상품을 구입하신 분들이 다음 상품도 구입하셨습니다.
@@ -6993,7 +6948,7 @@
             </div>
             <div class="clear temp_H60"></div>
             <!-- 관련 도서 클릭 -->
-            <div class="last_wrap-buy">
+            <div class="last_wrap-click">
                 <div class="last_Tbox">
                     <div class="last_title">
                         이 상품을 구입하신 분들이 다음 상품도 클릭하셨습니다.
@@ -7040,7 +6995,7 @@
                         <!-- 좁은 본문 도서 9개, 넓은 본문 12 -->
                         <ul id="recentList">
                             <li>
-                                <div class="fix_del" style="display: none">
+                                <div class="fix_del hidden">
                                     <a
                                         href="javascript:void(0);"
                                         class="RecentDelete"
