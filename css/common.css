@@ -559,13 +559,6 @@ ul, li {
 
 }
 
-/* .header_top ul li a:hover {
-    background-color: #fff;
-    border: 1px solid #4496D9;
-    border-bottom: none;
-    color: #0f4e8a;
-    letter-spacing: -0.5px;
-} */
 
 .banner img {
     border-radius: 20px;
@@ -1140,7 +1133,7 @@ ul, li {
     position: relative;
     transition-property: transform;
 
-    margin-right: 30px;
+    margin-right: 30px; 
 }
 
 

@@ -224,6 +224,10 @@
     transition: 0.5s;
 }
 
+.Bcoverwrap .cover .swiper_section .swiper_wrapper .swiper_item{
+    margin-right: 0 !important;
+}
+
 
 .Bcoverwrap .cover {
     position: relative;
