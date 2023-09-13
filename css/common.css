@@ -1117,10 +1117,6 @@ ul, li {
 
 /*swiper bundle */
 
-.swiper-wrapper {
-    transform-style: preserve-3d;
-    display: flex;
-}
 
 .swiper_touch {
     touch-action: pan-y;
@@ -1134,20 +1130,8 @@ ul, li {
     display: flex;
     transition-property: transform;
     box-sizing: content-box;
-
-
-}
-
-#w_aladinerChoice_type .swiper_section,
-#w_monthBook_type .swiper_section,
-#w_aladinSpecial_type .swiper_section,
-#jinnyWelcome_Back .swiper_section
-{
-    height: 324px !important;
-}
-
-#w_specialPrice_type .swiper_section {
-    height: 340px !important;
+    transform-style: preserve-3d;
+    display: flex;
 }
 
 .swiper_item {
@@ -1156,6 +1140,21 @@ ul, li {
     position: relative;
     transition-property: transform;
 }
+
+
+#w_monthBook_type .swiper_section,
+#w_aladinSpecial_type .swiper_section,
+#jinnyWelcome_Back .swiper_section
+{
+    height: 324px !important;
+}
+
+#w_aladinerChoice_type .swiper_section,
+#w_specialPrice_type .swiper_section {
+    height: 340px !important;
+}
+
+
 
 /* ----------------------------------------------------------🔽🔽🔽 Footer 🔽🔽🔽---------------------------------------------------------- */
 
