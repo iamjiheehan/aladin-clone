@@ -50,7 +50,7 @@ $(function () {
             }
 
             $(function () {
-                $("#jinnyWelcome_Back .swiper_wrapper").slick({
+                $("#jinnyWelcome_Back .swiper_wrapper").not('.slick-initialized').slick({
                     slidesToShow: 5,
                     slidesToScroll: 5,
                 });
@@ -112,7 +112,7 @@ $(function () {
             }
 
             $(function () {
-                $("#w_monthBook .swiper_wrapper").slick({
+                $("#w_monthBook .swiper_wrapper").not('.slick-initialized').slick({
                     slidesToShow: 5,
                     slidesToScroll: 5,
                 });
@@ -173,7 +173,7 @@ $(function () {
             }
 
             $(function () {
-                $("#w_aladinSpecial_type .swiper_wrapper").slick({
+                $("#w_aladinSpecial_type .swiper_wrapper").not('.slick-initialized').slick({
                     slidesToShow: 5,
                     slidesToScroll: 5,
                 });
@@ -238,7 +238,7 @@ $(function () {
             }
 
             $(function () {
-                $("#w_specialPrice .swiper_wrapper").slick({
+                $("#w_specialPrice .swiper_wrapper").not('.slick-initialized').slick({
                     slidesToShow: 5,
                     slidesToScroll: 5,
                 });
@@ -301,7 +301,7 @@ $(function () {
             }
 
             $(function () {
-                $("#w_aladinerChoice .swiper_wrapper").slick({
+                $("#w_aladinerChoice .swiper_wrapper").not('.slick-initialized').slick({
                     slidesToShow: 5,
                     slidesToScroll: 5,
                 });
