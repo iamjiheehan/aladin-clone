@@ -471,13 +471,15 @@
     margin-left: 10px;
 }
 
-.welcome_wrap h3 {
+.welcome_wrap h3, 
+.welcome_section3 h3 {
     font-size: 22px;
     color: #333;
     letter-spacing: -0.5px;
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.4;
     margin-bottom: 15px;
+
 }
 
 .welcome_wrap a:link, .welcome_wrap a {

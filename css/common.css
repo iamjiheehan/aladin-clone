@@ -1135,7 +1135,16 @@ ul, li {
     transition-property: transform;
     box-sizing: content-box;
 
-    overflow: hidden;
+
+}
+
+#w_eventbanner_type .swiper_section,
+#w_aladinerChoice_type .swiper_section,
+#w_monthBook_type .swiper_section,
+#w_aladinSpecial_type .swiper_section,
+#w_eventbanner_type .swiper_section
+{
+    height: 324px !important;
 }
 
 
