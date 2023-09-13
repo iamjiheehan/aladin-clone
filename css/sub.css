@@ -1,9 +1,10 @@
 /*--------------------------상단 고정 레이어----------------- */
 .fixed_top-wrap {
+
     left: 0;
     top: 0;
     z-index: 9999;
-    /* visibility: hidden; */
+    visibility: hidden;
     transition: visibility 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
     /* opacity: 0; */
     /* transform: translate(0,-150px); */

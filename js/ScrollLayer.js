@@ -18,7 +18,7 @@ $(function () {
         if (currentScrollValue >= fixedLayerPointTop) {
             $(".fixed_top-wrap").css('transform', 'translate(0, 0)');
         } else {
-            $(".fixed_top-wrap").css('transform', 'translate(0, -150px)');
+            $(".fixed_top-wrap").css('transform', 'translate(0, -150px)').css("visibility", 'visible');
         }
     });
 });
