@@ -797,7 +797,7 @@
 }
 
 .jinnybtnlayer {
-    width: 170px;
+    width: 100%;
     position: absolute;
     bottom: 0.3rem;
     background-color: rgba(75, 75, 75, 0.97);
@@ -1119,7 +1119,7 @@
 /* -------------------------알라디너의 선택------------------------ */
 
 .w_booklist .cover img {
-    width: 100%;
+    width: 177px;
     border: 1px #e2e2e2 solid;
 }
 
