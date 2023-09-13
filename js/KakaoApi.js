@@ -19,12 +19,12 @@ $(function () {
         $.ajax({
             method: "GET",
             url: "https://dapi.kakao.com/v3/search/book?target=title",
-            data: $.param({ query: title, size: 1 }), // Limit to 1 result
+            data: $.param({ query: title, size: 1 }), // 결과 한 개만 보이도록 제한
             headers: { Authorization: "KakaoAK 6d7be6265b1495468abf689fe747c801" }
         })
         .done(function (msg) {
             if (msg.documents.length > 0) {
-                var book = msg.documents[0]; // 결과 한 개만 보이도록 제한
+                var book = msg.documents[0]; 
 
                 var $swiperItem = $("<div class='swiper_item'></div>");
                 var $cover = $("<div class='cover'></div>");
