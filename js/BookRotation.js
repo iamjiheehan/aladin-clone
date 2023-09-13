@@ -6,7 +6,9 @@ $(function () {
             isRotated = false;
         } else {
             $(this).css("transform", "rotateY(180deg)");
+            $("#divFlipImg section").css("perspective","none");
             isRotated = true;
+
         }
     });
 
