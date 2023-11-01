@@ -431,9 +431,7 @@ ul, li {
 }
 
 
-#head_book_layer.header_layer_box .banner img, #head_coffee_layer.header_layer_box .banner img {
-    border-radius: 15px;
-}
+#head_book_layer.header_layer_box 
 
 .header_top .header_layer_box .category > div {
     display: flex;
