@@ -961,6 +961,7 @@
     position: relative;
     margin-bottom: 8px;
     padding: 5px;
+    overflow: hidden;
 }
 
 .w_booklist .price {
